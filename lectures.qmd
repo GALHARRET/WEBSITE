@@ -1,0 +1,74 @@
+---
+title: "Cours de statistiques pour psychologues"
+---
+
+# Statistique descriptive
+
+J'ai créé ce cours en 2022, il s'adressait aux étudiants de Licence 1 de psychologie de Nantes. 
+
+* Cours 1 : Organiser et représenter des données  [Télécharger le diaporama](lectures/L1/capsule1.pdf)
+
+* Cours 2 : Indices de tendance centrale [Télécharger le diaporama](lectures/L1/capsule2.pdf)
+
+* Cours 3 : Indices de dispersion [Télécharger le diaporama](lectures/L1/capsule3.pdf)
+
+* Cours 4 : Standardisation - Loi normale [Télécharger le diaporama](lectures/L1/capsule4.pdf)
+
+
+# Statistique inférentielle - Tests d'hypothèse
+
+J'ai créé ce cours en 2020, il s'adressait aux étudiants de Licence 2 de psychologie de Nantes. Le diaporama contient la partie cours et les TD sont réalisés sur JAMOVI
+
+* Cours 1 : Introduction aux tests statistiques [Télécharger le diaporama](lectures/L2/chapitre1.pdf)
+
+* Cours 2 : Tests de Student [Télécharger le diaporama](lectures/L2/chapitre2.pdf) 
+
+* Cours 3 : Test de corrélation de Bravais-Pearson [Télécharger le diaporama](lectures/L2/chapitre3.pdf)
+
+* Cours 4 : Tests du $\chi^2$ [Télécharger le diaporama](lectures/L2/chapitre4.pdf)
+
+* Cours 5 : Tests non paramétriques basés sur les rangs [Télécharger le diaporama](lectures/L2/chapitre5.pdf)
+
+* TD 1 : Tests de comparaison de deux groupes indépendants [Télécharger le diaporama](lectures/L2/TD1.pdf)
+
+* TD 2 : Tests de comparaison de deux groupes appariés [Télécharger le diaporama](lectures/L2/TD2.pdf) 
+
+* TD 3 : Tests de corrélation  [Télécharger le diaporama](lectures/L2/TD3.pdf)
+
+* TD 4 : Tests du $\chi^2$ [Télécharger le diaporama](lectures/L2/TD4.pdf)
+
+# Modèles d'ANOVA 
+
+Ce cours est enseigné en Licence 3 à la Faculté de Psychologie au premier semestre. Le chapitre sur les contrastes n'est plus au programme.
+
+* Cours 1 : Anova à 1 facteur sur groupes indépendants [Télécharger le diaporama](lectures/L3/chapitre1.pdf)
+
+* Cours 2 : Anova à 2 facteurs sur groupes indépendants [Télécharger le diaporama](lectures/L3/chapitre2.pdf) 
+
+* Cours 3 : Anova à mesures répétées [Télécharger le diaporama](lectures/L3/chapitre3.pdf)
+
+* Cours 4 : Plans à deux facteurs sur mesures répétées [Télécharger le diaporama](lectures/L3/chapitre4.pdf)
+
+* Cours 5 : Les contrastes [Télécharger le diaporama](lectures/L3/chapitre5.pdf)
+
+* TD : Réaliser une ANOVA sur JAMOVI [Télécharger le diaporama](lectures/L3/TD1.pdf)
+
+# Régression linéaire multiple
+
+Ce cours est enseigné en Licence 3 à la Faculté de Psychologie au deuxième semestre. Le chapitre sur l'ANCOVA n'est plus au programme.
+
+* Cours 1 : Régression linéaire simple [Télécharger le diaporama](lectures/L3/RLMchapitre1.pdf)
+
+* Cours 2 : Régression linéaire multiple [Télécharger le diaporama](lectures/L3/RLMchapitre2.pdf) 
+
+* Cours 3 : Comparaison de modèles [Télécharger le diaporama](lectures/L3/RLMchapitre3.pdf)
+
+* Cours 4 : Régressions sur variables qualitatives, ANCOVA [Télécharger le diaporama](lectures/L3/RLMchapitre4.pdf)
+
+# Cours de M1 Psychologie
+
+Le cours reprend un certain nombre de notions vues en Licence auquel on ajoute les régressions hiérarchiques et la régression logistique. [Cours complet](lectures/M1/cours_M1.pdf)
+
+# Cours de M2 Psychologie
+
+Il s'agit d'une introduction aux modèles de médiation et de modération.  [Cours complet](lectures/M1/cours_M2.pdf)

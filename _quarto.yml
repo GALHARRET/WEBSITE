@@ -1,0 +1,23 @@
+project:
+  type: website
+
+website:
+  title: "JMG Website"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: lectures.qmd
+        text: Statistics course for psychology students
+      - href: publications.qmd
+        text: Publications
+      
+
+format:
+  html:
+    theme: lux
+    css: styles.css
+    toc: true
+
+editor: visual
+
