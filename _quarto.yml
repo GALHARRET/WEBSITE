@@ -8,11 +8,12 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: lectures.qmd
-        text: Statistics course for psychology students
+      - href: cours_psycho.qmd
+        text: Cours de statistiques pour étudiants en psychologie
       - href: publications.qmd
         text: Publications
-      
+      - href: communications.qmd
+        text: Communications
 
 format:
   html:

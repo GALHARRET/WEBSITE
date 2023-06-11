@@ -2,14 +2,13 @@
 title: "Galharret Jean-Michel"
 ---
 
-I'm an assistant professor of statistics at the University of Nantes.
-I teach in the Faculty of Psychology and I am a member of the ALEA team in the Jean-Leray mathematics laboratory.
+Je suis enseignant à l'université de Nantes dans la faculté de psychologie. 
+Je suis membre de l'équipe aléa dans le laboratoire Jean-Leray.
 
-My research interests are 
+Mes principales activités de recherche concernent 
 
-- applied Bayesian statistics
+- la statistique bayésienne appliquée,
 
-- causal inference 
+- l'inférence causale,
 
-- applied statistics in psychology
-
+- la modélisation en équations structurelles.
