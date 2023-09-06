@@ -3,13 +3,15 @@ project:
   output-dir: docs
 
 website:
-  title: "JMG Website"
+  title: "Website"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - href: cours_psycho.qmd
-        text: Cours de statistiques pour étudiants en psychologie
+        text: Stats pour Psycho
+      - href: cours_ONIRIS.qmd
+        text: Cours ONIRIS
       - href: publications.qmd
         text: Publications
       - href: communications.qmd

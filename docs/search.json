@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Galharret Jean-Michel",
     "section": "",
-    "text": "Je suis enseignant à l’université de Nantes dans la faculté de psychologie. Je suis membre de l’équipe aléa dans le laboratoire Jean-Leray.\nMes principales activités de recherche concernent\n\nla statistique bayésienne appliquée,\nl’inférence causale,\nla modélisation en équations structurelles."
+    "text": "Enseignant chercheur à ONIRIS VetAgroBio, site de la Géraudière, membre du département MSC (Management, Statistique, Communication) et de l’équipe de recherche StatSC.\nMes principales activités de recherche concernent"
   },
   {
     "objectID": "about.html",
@@ -30,15 +30,155 @@
   {
     "objectID": "cours_psycho.html",
     "href": "cours_psycho.html",
-    "title": "Cours de statistiques pour psychologues",
+    "title": "Stats pour Psycho",
     "section": "",
-    "text": "Statistique descriptive\nJ’ai créé ce cours en 2022, il s’adressait aux étudiants de Licence 1 de psychologie de Nantes.\n\nCours 1 : Organiser et représenter des données Télécharger le diaporama.\nCours 2 : Indices de tendance centrale Télécharger le diaporama\nCours 3 : Indices de dispersion Télécharger le diaporama\nCours 4 : Standardisation - Loi normale Télécharger le diaporama\n\n\n\nStatistique inférentielle - Tests d’hypothèse\nJ’ai créé ce cours en 2020, il s’adressait aux étudiants de Licence 2 de psychologie de Nantes. Le diaporama contient la partie cours et les TD sont réalisés sur JAMOVI\n\nCours 1 : Introduction aux tests statistiques Télécharger le diaporama\nCours 2 : Tests de Student Télécharger le diaporama\nCours 3 : Test de corrélation de Bravais-Pearson Télécharger le diaporama\nCours 4 : Tests du \\(\\chi^2\\) Télécharger le diaporama\nCours 5 : Tests non paramétriques basés sur les rangs Télécharger le diaporama\nTD 1 : Tests de comparaison de deux groupes indépendants Télécharger le diaporama\nTD 2 : Tests de comparaison de deux groupes appariés Télécharger le diaporama\nTD 3 : Tests de corrélation Télécharger le diaporama\nTD 4 : Tests du \\(\\chi^2\\) Télécharger le diaporama\n\n\n\nModèles d’ANOVA\nCe cours est enseigné en Licence 3 à la Faculté de Psychologie au premier semestre. Le chapitre sur les contrastes n’est plus au programme.\n\nCours 1 : Anova à 1 facteur sur groupes indépendants Télécharger le diaporama\nCours 2 : Anova à 2 facteurs sur groupes indépendants Télécharger le diaporama\nCours 3 : Anova à mesures répétées Télécharger le diaporama\nCours 4 : Plans à deux facteurs sur mesures répétées Télécharger le diaporama\nCours 5 : Les contrastes Télécharger le diaporama\nTD : Réaliser une ANOVA sur JAMOVI Télécharger le diaporama\n\n\n\nRégression linéaire multiple\nCe cours est enseigné en Licence 3 à la Faculté de Psychologie au deuxième semestre. Le chapitre sur l’ANCOVA n’est plus au programme.\n\nCours 1 : Régression linéaire simple Télécharger le diaporama\nCours 2 : Régression linéaire multiple Télécharger le diaporama\nCours 3 : Comparaison de modèles Télécharger le diaporama\nCours 4 : Régressions sur variables qualitatives, ANCOVA Télécharger le diaporama\n\n\n\nCours de M1 Psychologie\nLe cours reprend un certain nombre de notions vues en Licence auquel on ajoute les régressions hiérarchiques et la régression logistique. Cours complet\n\n\nCours de M2 Psychologie\nIl s’agit d’une introduction aux modèles de médiation et de modération. Cours complet"
+    "text": "Statistique descriptive\nJ’ai créé ce cours en 2022, il s’adressait aux étudiants de Licence 1 de psychologie de Nantes.\n\nCours 1 : Organiser et représenter des données Télécharger le diaporama. Une capsule vidéo est disponible Médiaserveur Nantes.\nCours 2 : Indices de tendance centrale Télécharger le diaporama. Une capsule vidéo est disponible Médiaserveur Nantes.\nCours 3 : Indices de dispersion Télécharger le diaporama. Une capsule vidéo est disponible Médiaserveur Nantes.\nCours 4 : Standardisation - Loi normale Télécharger le diaporama. Une capsule vidéo est disponible Médiaserveur Nantes.\n\n\n\nStatistique inférentielle - Tests d’hypothèse\nJ’ai créé ce cours en 2020, il s’adressait aux étudiants de Licence 2 de psychologie de Nantes. Le diaporama contient la partie cours et les TD sont réalisés sur JAMOVI\n\nCours 1 : Introduction aux tests statistiques Télécharger le diaporama\nCours 2 : Tests de Student Télécharger le diaporama\nCours 3 : Test de corrélation de Bravais-Pearson Télécharger le diaporama\nCours 4 : Tests du \\(\\chi^2\\) Télécharger le diaporama\nCours 5 : Tests non paramétriques basés sur les rangs Télécharger le diaporama\nTD 1 : Tests de comparaison de deux groupes indépendants Télécharger le diaporama\nTD 2 : Tests de comparaison de deux groupes appariés Télécharger le diaporama\nTD 3 : Tests de corrélation Télécharger le diaporama\nTD 4 : Tests du \\(\\chi^2\\) Télécharger le diaporama\n\n\n\nModèles d’ANOVA\nCe cours est enseigné en Licence 3 à la Faculté de Psychologie au premier semestre. Le chapitre sur les contrastes n’est plus au programme.\n\nCours 1 : Anova à 1 facteur sur groupes indépendants Télécharger le diaporama\nCours 2 : Anova à 2 facteurs sur groupes indépendants Télécharger le diaporama\nCours 3 : Anova à mesures répétées Télécharger le diaporama\nCours 4 : Plans à deux facteurs sur mesures répétées Télécharger le diaporama\nCours 5 : Les contrastes Télécharger le diaporama\nTD : Réaliser une ANOVA sur JAMOVI Télécharger le diaporama\n\n\n\nRégression linéaire multiple\nCe cours est enseigné en Licence 3 à la Faculté de Psychologie au deuxième semestre. Le chapitre sur l’ANCOVA n’est plus au programme.\n\nCours 1 : Régression linéaire simple Télécharger le diaporama\nCours 2 : Régression linéaire multiple Télécharger le diaporama\nCours 3 : Comparaison de modèles Télécharger le diaporama\nCours 4 : Régressions sur variables qualitatives, ANCOVA Télécharger le diaporama\n\n\n\nCours de M1 Psychologie\nLe cours reprend un certain nombre de notions vues en Licence auquel on ajoute les régressions hiérarchiques et la régression logistique. Cours complet\n\n\nCours de M2 Psychologie\nIl s’agit d’une introduction aux modèles de médiation et de modération. Cours complet"
   },
   {
     "objectID": "communications.html",
     "href": "communications.html",
-    "title": "JMG Website",
+    "title": "Website",
     "section": "",
     "text": "JDS (Journées de statistique)\nJe participe aux JDS depuis 2018.\n\n2023 : à venir\n2021 : Analyse bayésienne des modèles de médiation et de modération Slides\n2020 : Priors comparison in Bayesian mediation framework with binary outcome Slides\n2019 : Détection bayésienne d’outliers et ses applications en archéologie Slides\n2018 : Modèle de médiation à réponse binaire. Approche non paramétrique pour tester l’effet direct Slides\n\n\n\nENBIS\n\n2021 : Priors comparison in Bayesian mediation framework with binary outcome Slides"
+  },
+  {
+    "objectID": "cours_ONIRIS.html",
+    "href": "cours_ONIRIS.html",
+    "title": "cours ONIRIS",
+    "section": "",
+    "text": "Prise en main de R (Séances 1 à 3)\nGraphiques dans R (Séances 4 et 5)"
+  },
+  {
+    "objectID": "cours_ONIRIS.html#ec552-intro-à-r",
+    "href": "cours_ONIRIS.html#ec552-intro-à-r",
+    "title": "cours ONIRIS",
+    "section": "",
+    "text": "Prise en main de R (Séances 1 à 3)"
+  },
+  {
+    "objectID": "cours_ONIRIS.html#ec7851-mathématiques-pour-lingénieur-2",
+    "href": "cours_ONIRIS.html#ec7851-mathématiques-pour-lingénieur-2",
+    "title": "cours ONIRIS",
+    "section": "EC7851 Mathématiques pour l’ingénieur 2",
+    "text": "EC7851 Mathématiques pour l’ingénieur 2"
+  },
+  {
+    "objectID": "cours_ONIRIS.html#cours-ing1",
+    "href": "cours_ONIRIS.html#cours-ing1",
+    "title": "cours ONIRIS",
+    "section": "",
+    "text": "Prise en main de R (Séances 1 à 3)\nGraphiques dans R"
+  },
+  {
+    "objectID": "cours_ONIRIS.html#cours-ing2",
+    "href": "cours_ONIRIS.html#cours-ing2",
+    "title": "cours ONIRIS",
+    "section": "Cours Ing2",
+    "text": "Cours Ing2\n\nEC7851 Mathématiques pour l’ingénieur 2"
+  },
+  {
+    "objectID": "cours_ONIRIS/EC552/1-3_premiers_pas.html",
+    "href": "cours_ONIRIS/EC552/1-3_premiers_pas.html",
+    "title": "Premiers pas dans R",
+    "section": "",
+    "text": "Bref historique :\n\nR est à la fois un logiciel et un langage. Il est gratuit et open source.\nVersion libre et gratuite du langage S développée chez Bell Laboratories par John Chambers (1980).\nRobert Gentleman & Ross Ihaka (Université d’Auckland) proposent une première version de R en 1993.\nR Core Team crée en 1997 assure la maintenance et l’évolution de R.\nCRAN (Comprehensive R Archive Network) regroupe et met à disposition l’ensemble des éléments de R."
+  },
+  {
+    "objectID": "cours_ONIRIS/EC552/1-3_premiers_pas.html#indexation-et-longueur-dun-vecteur",
+    "href": "cours_ONIRIS/EC552/1-3_premiers_pas.html#indexation-et-longueur-dun-vecteur",
+    "title": "Premiers pas dans R",
+    "section": "Indexation et longueur d’un vecteur",
+    "text": "Indexation et longueur d’un vecteur\nLa fonction length() permet de calculer le nombre de valeurs d’un vecteur (quelle que soit la nature du vecteur considéré).\n\nlength(a1)\n\n[1] 6\n\nlength(a2)\n\n[1] 6\n\n\nChaque élément d’un vecteur est repéré par un indice entre [].\n\na1[1]\n\n[1] 1.5\n\na1[3]\n\n[1] 3.2\n\n# Opérations sur les éléments d'un vecteur\na1[1]+a1[3]\n\n[1] 4.7\n\na1[1]/a1[3]\n\n[1] 0.46875\n\n\nOn peut changer la valeur de a1[3] en lui affectant une nouvelle valeur :\n\na1[3]= -3\na1\n\n[1]  1.5  2.0 -3.0 -1.5  0.0 -1.0\n\n\nOn peut aussi ajouter de nouvelles valeurs aux vecteurs a1\n\na1[12]=10\na1[13]=11"
+  },
+  {
+    "objectID": "cours_ONIRIS/EC552/1-3_premiers_pas.html#les-calculs-de-base-avec-un-vecteur",
+    "href": "cours_ONIRIS/EC552/1-3_premiers_pas.html#les-calculs-de-base-avec-un-vecteur",
+    "title": "Premiers pas dans R",
+    "section": "Les calculs de base avec un vecteur",
+    "text": "Les calculs de base avec un vecteur\nOn peut ajouter, soustraire, multiplier des vecteurs entre eux à condition qu’ils soient de même longeur et qu’ils soient numériques.\n\na1=seq(10,20,by=1)\na2=seq(20,30,by=1)\na1+a2\n\n [1] 30 32 34 36 38 40 42 44 46 48 50\n\na2-a1\n\n [1] 10 10 10 10 10 10 10 10 10 10 10\n\na1*a2\n\n [1] 200 231 264 299 336 375 416 459 504 551 600\n\na2/a1\n\n [1] 2.000000 1.909091 1.833333 1.769231 1.714286 1.666667 1.625000 1.588235\n [9] 1.555556 1.526316 1.500000\n\na1^2*log(a2)\n\n [1]  299.5732  368.3872  445.1101  529.8985  622.8986  724.2471  834.0727\n [8]  952.4969 1079.6343 1215.5938 1360.4790"
+  },
+  {
+    "objectID": "cours_ONIRIS/EC552/1-3_premiers_pas.html#ouvrir-laide",
+    "href": "cours_ONIRIS/EC552/1-3_premiers_pas.html#ouvrir-laide",
+    "title": "Premiers pas dans R",
+    "section": "Ouvrir l’aide",
+    "text": "Ouvrir l’aide\nToutes les fonctions prédéfinies dans R possèdent une vignette (description des arguments de la fonction, des sorties et un exemple utilisant la fonction). Pour accéder à cette aide on met un point d’interrogation devant le nom de la fonction.\nExemple : Décrire la fonction sample\n\n?sample\n\nUne fonction comporte plusieurs arguments. Par exemple sample(x, size, replace = FALSE, prob = NULL)\nParmi les arguments, certains sont obligatoires\n\nx est un vecteur dans lequel on va choisir des valeurs au hasard.\nsize est la taille du résultat\n\nd’autres sont facultatifs (ils ont des valeurs par défaut) ici replace et prob.\n\nsample(-10:10,1)\n\n[1] -7\n\nsample(-10:10,3)\n\n[1] -4  6  5"
+  },
+  {
+    "objectID": "cours_ONIRIS/EC552/1-3_premiers_pas.html#un-peu-de-logique",
+    "href": "cours_ONIRIS/EC552/1-3_premiers_pas.html#un-peu-de-logique",
+    "title": "Premiers pas dans R",
+    "section": "Un peu de logique",
+    "text": "Un peu de logique\n\nl’opérateur | correspond à OU : A | B est faux lorsque les deux événements A et B sont faux simultanément et est vrai dans tous les autres cas.\nl’opérateur & correspond à ET : A & B est vrai uniquement lorsque les deux événements A et B sont vrais et est faux dans tous les autres cas.\n\nOn définit un vecteur\n\nset.seed(\"44\")\nx=sample(-20:20,40,T)\n\nOn veut savoir combien de valeurs de x sont postives.\n\nsum(x>0)\n\n[1] 15\n\n\nQuels sont les positions de ces valeurs ?\n\nwhich(x>0)\n\n [1]  2  7  8 16 18 21 22 24 26 27 30 32 33 35 39\n\n\nQuels sont les indices des valeurs supérieure à 5 ou inférieure à 0 ?\n\nwhich(x>5 | x<0)\n\n [1]  1  2  3  4  5  6  7  8  9 10 11 12 14 15 16 17 18 19 22 23 24 25 26 27 28\n[26] 29 30 31 32 33 34 35 36 37 38 39 40\n\n\nQuels sont les indices des valeurs dans [5,10] ?\n\nwhich(x>=5 & x<=10)\n\n[1]  8 32 39"
+  },
+  {
+    "objectID": "cours_ONIRIS/EC552/1-3_premiers_pas.html#exercices",
+    "href": "cours_ONIRIS/EC552/1-3_premiers_pas.html#exercices",
+    "title": "Premiers pas dans R",
+    "section": "Exercices",
+    "text": "Exercices\n\nExo 1 :\n\nCréer le vecteur x=c(“lannister”, “targaryen”, “baratheon”, “starck”,“greyjoy”)\nAfficher le premier élément de x\nAfficher tous les éléments de x sauf le premier\nAfficher les trois premiers éléments de x.\nAfficher le deuxième et le quatrième élément de x.\nClasser les éléments de x dans l’ordre alphabétique puis anti-alphabétique grâce aux fonctions sort et rev.\n\n\n\nExo 2 :\n\nCréer un vecteur y contenant les entiers pairs de inférieurs à 100 grâce à la fonction seq.\nAjouter à y les entiers impairs inférieurs à 100. Vérifier que l’ajout s’est fait correctement.\nA l’aide de la fonction length déterminer la taille du vecteur y final.\nA l’aide de la fonction rep créer un vecteur sonnette contenant 4 fois « ding » puis 4 fois « dong ».\nA l’aide de la fonction sample créer un vecteur melodie contenant une succession aléatoire de « ding » et de « dong » de taille 100.\nGrâce à la fonction table, déterminer combien il y a de « ding » et combien il y a de « dong » dans melodie."
+  },
+  {
+    "objectID": "cours_ONIRIS/EC552/1-3_premiers_pas.html#définition-et-fonctions-de-base",
+    "href": "cours_ONIRIS/EC552/1-3_premiers_pas.html#définition-et-fonctions-de-base",
+    "title": "Premiers pas dans R",
+    "section": "Définition et fonctions de base",
+    "text": "Définition et fonctions de base\n\nA=matrix(c(1,2,3,\n           2,1,-1,\n           -3,-1,1),nrow=3)\n\nQuelques fonctions utiles la dimension de la matrice\n\ndim(A)\n\n[1] 3 3\n\n\nLe résultat est donc un vecteur ayant deux éléments le nombre de ligne et le nombre de colonnes"
+  },
+  {
+    "objectID": "cours_ONIRIS/EC552/1-3_premiers_pas.html#indexation-des-éléments-dune-matrice",
+    "href": "cours_ONIRIS/EC552/1-3_premiers_pas.html#indexation-des-éléments-dune-matrice",
+    "title": "Premiers pas dans R",
+    "section": "Indexation des éléments d’une matrice",
+    "text": "Indexation des éléments d’une matrice\nLes éléments d’une matrice sont identifiés par un numéro de ligne et de colonne entre crochets A[i,j]\n\nA[1,2]\n\n[1] 2\n\n# première ligne de A \nA[1,]\n\n[1]  1  2 -3\n\n# première colonne de A\nA[,1]\n\n[1] 1 2 3"
+  },
+  {
+    "objectID": "cours_ONIRIS/EC552/1-3_premiers_pas.html#création-dun-data-frame",
+    "href": "cours_ONIRIS/EC552/1-3_premiers_pas.html#création-dun-data-frame",
+    "title": "Premiers pas dans R",
+    "section": "Création d’un data frame",
+    "text": "Création d’un data frame\nOn crée deux variables x et y contenant \\(n=100\\) nombres distribués selon une loi uniforme continue sur [0,20] (fonction runif) et une variable gr (expliquer le résultat du code correspondant). La fonction round permet d’arrondir.\n\nx<-round(runif(100,0,20),1)\ny<-round(runif(100,0,20),1)\ngr<-sample(c(\"ING1\",\"ING2\"),size=100,replace=T,prob=c(0.6,0.4))\ndf<-data.frame(NoteF=x,NoteM=y,gr=gr)\n\nL’indexation des éléments dans un data-frame est la même que dans une matrice :\n\ndf[1,1]\n\nOn peut également sélectionner une colonne du data frame via $\n\ndf$NoteF"
+  },
+  {
+    "objectID": "cours_ONIRIS/EC552/1-3_premiers_pas.html#les-fonctions-utiles-pour-les-data-frame",
+    "href": "cours_ONIRIS/EC552/1-3_premiers_pas.html#les-fonctions-utiles-pour-les-data-frame",
+    "title": "Premiers pas dans R",
+    "section": "Les fonctions utiles pour les data frame",
+    "text": "Les fonctions utiles pour les data frame\n\nsummary\nCette fonction permet de résumer l’ensemble des variables du data frame.\n\nsummary(df)\n\n     NoteF            NoteM            gr           \n Min.   : 0.000   Min.   : 0.90   Length:100        \n 1st Qu.: 4.900   1st Qu.: 5.85   Class :character  \n Median : 8.650   Median :10.55   Mode  :character  \n Mean   : 9.589   Mean   :10.55                     \n 3rd Qu.:14.825   3rd Qu.:14.72                     \n Max.   :19.900   Max.   :19.90                     \n\n\n\n\napply\nLa fonction apply permet d’appliquer une fonction sur les lignes (1) ou les colonnes d’un data frame : par exemple si on souhaite appliquer la fonction moyenne (mean) sur les colonnes du data frame df on utilise :\n\napply(df[,1:2],2,mean)\n\n NoteF  NoteM \n 9.589 10.547 \n\n\nRemarque : on n’a utilisé que les deux premières colonnes du data frame car la troisième n’est pas numérique (donc on ne peut pas calculer sa moyenne)."
+  },
+  {
+    "objectID": "cours_ONIRIS/EC552/1-3_premiers_pas.html#importation-dun-data-frame-inclus-dans-un-package",
+    "href": "cours_ONIRIS/EC552/1-3_premiers_pas.html#importation-dun-data-frame-inclus-dans-un-package",
+    "title": "Premiers pas dans R",
+    "section": "Importation d’un data frame inclus dans un package",
+    "text": "Importation d’un data frame inclus dans un package\nPour accéder aux data frames de R :\n\ndata()\n\nensuite on peut grâce à la fonction help obtenir de l’aide sur l’un des data frame :\n\nhelp(\"mtcars\")\n\nEnsuite on charge le jeu de données via\n\ndata(\"mtcars\")\n\nUne fois le data frame importé on constate qu’il est présent dans la fenêtre environnement\n\n\n\nFenêtre environnement"
+  },
+  {
+    "objectID": "cours_ONIRIS/EC552/1-3_premiers_pas.html#importation-dune-base-de-données-externe",
+    "href": "cours_ONIRIS/EC552/1-3_premiers_pas.html#importation-dune-base-de-données-externe",
+    "title": "Premiers pas dans R",
+    "section": "Importation d’une base de données externe",
+    "text": "Importation d’une base de données externe\nOn peut utiliser une interface graphique pour ouvrir les fichiers contenant le data frame. Les plus courants sont :\n\n*.csv : (Comma Separed Values) ce sont des fichiers de type tableaux sans mise en forme\n*.xlsx : fichiers produits à partir du logiciel excel\n*.ods : fichiers produits à partir du logiciel Calc de LibreOffice.\n\n\n\n\nMenu Importer\n\n\nOn va importer le data frame contenu dans le fichier bordeaux.csv disponible sur Connect (vous devez le télécharger).\nVous avez deux solutions : From text (base)\n\n\n\nImportation avec la librairie base\n\n\nFrom text (readr)\n\n\n\nImportation avec la librairie readr\n\n\nEnsuite il est recommandé de copier/coller la ligne de commande dans le script R afin de pas à avoir à reproduire la manipulation à chaque session de travail sur le fichier bordeaux.csv\n\n\n\nLa fonction read_csv()"
+  },
+  {
+    "objectID": "cours_ONIRIS/EC552/1-3_premiers_pas.html#exercice-sur-les-data-frame",
+    "href": "cours_ONIRIS/EC552/1-3_premiers_pas.html#exercice-sur-les-data-frame",
+    "title": "Premiers pas dans R",
+    "section": "Exercice sur les data frame",
+    "text": "Exercice sur les data frame\n\nCharger le fichier de données iris. Lire l’aide de iris pour comprendre le jeu de données.\n\n\n\nVoir la correction\ndata(\"iris\")\nhelp(\"iris\")\n\n\n\nQuel est le type de iris ? Quelles sont les dimensions de iris ?\n\n\n\nVoir la correction\nclass(iris)\ndim(iris)\n\n\n\nAppliquer la fonction str à iris. A quoi correspondent les informations renvoyées ?\n\n\n\nVoir la correction\nstr(iris)\n\n\n\nAppliquer la fonction summary à iris. A quoi correspondent les informations renvoyées ?\n\n\n\nVoir la correction\nsummary(iris)\n\n\n\nUtiliser les fonctions colnames() et rownames(). Quelles sont les informations renvoyées ?\n\n\n\nVoir la correction\nrownames(iris)\n# Le nom des lignes de iris\ncolnames(iris)\n# Le nom des colonnes de iris\n\n\n\nA l’aide la fonction de texte paste remplacer le nom des lignes par fleur 1, …, fleur 150.\n\n\n\nVoir la correction\nrownames(iris)<-paste(\"fleur\",1:150,sep=\" \")\n\n\n\nPour un data frame on peut appeler une colonne par son nom en utilisant $ : iris$Sepal.Length. En utilisant cette information donner la classe de la colonne Species.\n\n\n\nVoir la correction\nclass(iris$Species)\n\n\n\nQuels sont les niveaux du facteur “Species” (fonction levels) ?\n\n\n\nVoir la correction\nlevels(iris$Species)\n\n\n\nCréer une nouvelle colonne nommée groupe (on pensera à $) dans le data frame iris identique à la colonne Species. Quelle est la classe de cette nouvelle colonne ?\n\n\n\nVoir la correction\niris$groupe=iris$Species\nclass(iris$groupe)\n\n\n\nRenommer les niveaux de la colonne groupe en A, B, C (A pour setosa, B pour versicolor, C pour virginica). Afficher les indices des lignes de iris correspondant au groupe B.\n\n\n\nVoir la correction\nlevels(iris$groupe)=c(\"A\",\"B\",\"C\")\nwhich(iris$groupe==\"B\")\n\n\n\nCréer I l’ensemble des numéros de lignes correspondantes aux fleurs du groupe A. A l’aide de I afficher les lignes de iris correspondant au groupe A. Proposer une solution alternative.\n\n\n\nVoir la correction\nI=which(iris$groupe==\"A\")\niris[I,]\niris[iris$groupe==\"A\",]\n\n\n\nEn adoptant la même logique que la question précédente, afficher uniquement les lignes de iris où « Sepal.Length » est inférieur à 5.\n\n\n\nVoir la correction\niris[iris$Sepal.Length<=5,]\n\n\n\nCombien y a-t-il d’individus ayant la longueur des sépales inférieure à 5 ?\n\n\n\nVoir la correction\nsum(iris$Sepal.Length<=5)"
+  },
+  {
+    "objectID": "index.html#enseignement",
+    "href": "index.html#enseignement",
+    "title": "Galharret Jean-Michel",
+    "section": "Enseignement :",
+    "text": "Enseignement :\n\nUFR de psychologie (2015-2023)\nIUT d’Angers département Génie Biologique (2006-2015)"
+  },
+  {
+    "objectID": "index.html#recherche",
+    "href": "index.html#recherche",
+    "title": "Galharret Jean-Michel",
+    "section": "Recherche :",
+    "text": "Recherche :\n\nLMJL Laboratoire de mathématique Jean Leray (2017-2023)"
   }
 ]

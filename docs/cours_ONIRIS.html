@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Website - Stats pour Psycho</title>
+<title>Website - cours ONIRIS</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -59,7 +59,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -85,11 +84,11 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./cours_psycho.html" aria-current="page">
+    <a class="nav-link" href="./cours_psycho.html">
  <span class="menu-text">Stats pour Psycho</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cours_ONIRIS.html">
+    <a class="nav-link active" href="./cours_ONIRIS.html" aria-current="page">
  <span class="menu-text">Cours ONIRIS</span></a>
   </li>  
   <li class="nav-item">
@@ -115,12 +114,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#statistique-descriptive" id="toc-statistique-descriptive" class="nav-link active" data-scroll-target="#statistique-descriptive">Statistique descriptive</a></li>
-  <li><a href="#statistique-inférentielle---tests-dhypothèse" id="toc-statistique-inférentielle---tests-dhypothèse" class="nav-link" data-scroll-target="#statistique-inférentielle---tests-dhypothèse">Statistique inférentielle - Tests d’hypothèse</a></li>
-  <li><a href="#modèles-danova" id="toc-modèles-danova" class="nav-link" data-scroll-target="#modèles-danova">Modèles d’ANOVA</a></li>
-  <li><a href="#régression-linéaire-multiple" id="toc-régression-linéaire-multiple" class="nav-link" data-scroll-target="#régression-linéaire-multiple">Régression linéaire multiple</a></li>
-  <li><a href="#cours-de-m1-psychologie" id="toc-cours-de-m1-psychologie" class="nav-link" data-scroll-target="#cours-de-m1-psychologie">Cours de M1 Psychologie</a></li>
-  <li><a href="#cours-de-m2-psychologie" id="toc-cours-de-m2-psychologie" class="nav-link" data-scroll-target="#cours-de-m2-psychologie">Cours de M2 Psychologie</a></li>
+  <li><a href="#cours-ing1" id="toc-cours-ing1" class="nav-link active" data-scroll-target="#cours-ing1">Cours Ing1</a>
+  <ul class="collapse">
+  <li><a href="#ec552-intro-à-r" id="toc-ec552-intro-à-r" class="nav-link" data-scroll-target="#ec552-intro-à-r">EC552 Intro à R</a></li>
+  <li><a href="#ec503-algorithmique-et-programmation" id="toc-ec503-algorithmique-et-programmation" class="nav-link" data-scroll-target="#ec503-algorithmique-et-programmation">EC503 Algorithmique et programmation</a></li>
+  </ul></li>
+  <li><a href="#cours-ing2" id="toc-cours-ing2" class="nav-link" data-scroll-target="#cours-ing2">Cours Ing2</a>
+  <ul class="collapse">
+  <li><a href="#ec7851-mathématiques-pour-lingénieur-2" id="toc-ec7851-mathématiques-pour-lingénieur-2" class="nav-link" data-scroll-target="#ec7851-mathématiques-pour-lingénieur-2">EC7851 Mathématiques pour l’ingénieur 2</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -129,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Stats pour Psycho</h1>
+<h1 class="title">cours ONIRIS</h1>
 </div>
 
 
@@ -144,62 +146,26 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="statistique-descriptive" class="level1">
-<h1>Statistique descriptive</h1>
-<p>J’ai créé ce cours en 2022, il s’adressait aux étudiants de Licence 1 de psychologie de Nantes.</p>
-<ul>
-<li><p>Cours 1 : Organiser et représenter des données <a href="lectures/L1/capsule1.pdf">Télécharger le diaporama</a>. Une capsule vidéo est disponible <a href="https://mediaserver.univ-nantes.fr/permalink/v1266301beec6aqpg0x5/">Médiaserveur Nantes</a>.</p></li>
-<li><p>Cours 2 : Indices de tendance centrale <a href="lectures/L1/capsule2.pdf">Télécharger le diaporama</a>. Une capsule vidéo est disponible <a href="https://mediaserver.univ-nantes.fr/permalink/v1266302bb2d37fhdb7e/">Médiaserveur Nantes</a>.</p></li>
-<li><p>Cours 3 : Indices de dispersion <a href="lectures/L1/capsule3.pdf">Télécharger le diaporama</a>. Une capsule vidéo est disponible <a href="https://mediaserver.univ-nantes.fr/permalink/v1266307864655axpdth/">Médiaserveur Nantes</a>.</p></li>
-<li><p>Cours 4 : Standardisation - Loi normale <a href="lectures/L1/capsule4.pdf">Télécharger le diaporama</a>. Une capsule vidéo est disponible <a href="https://mediaserver.univ-nantes.fr/permalink/v1266367d5f6fkm7pz63/">Médiaserveur Nantes</a>.</p></li>
-</ul>
+<section id="cours-ing1" class="level2">
+<h2 class="anchored" data-anchor-id="cours-ing1">Cours Ing1</h2>
+<section id="ec552-intro-à-r" class="level3">
+<h3 class="anchored" data-anchor-id="ec552-intro-à-r">EC552 Intro à R</h3>
+<ol type="1">
+<li><p><a href="cours_ONIRIS/EC552/1-3_premiers_pas.html">Prise en main de R (Séances 1 à 3)</a></p></li>
+<li><p><a href="./EC552/4-5_graphiques_def.pdf">Graphiques dans R (Séances 4 et 5)</a></p></li>
+</ol>
 </section>
-<section id="statistique-inférentielle---tests-dhypothèse" class="level1">
-<h1>Statistique inférentielle - Tests d’hypothèse</h1>
-<p>J’ai créé ce cours en 2020, il s’adressait aux étudiants de Licence 2 de psychologie de Nantes. Le diaporama contient la partie cours et les TD sont réalisés sur JAMOVI</p>
-<ul>
-<li><p>Cours 1 : Introduction aux tests statistiques <a href="lectures/L2/chapitre1.pdf">Télécharger le diaporama</a></p></li>
-<li><p>Cours 2 : Tests de Student <a href="lectures/L2/chapitre2.pdf">Télécharger le diaporama</a></p></li>
-<li><p>Cours 3 : Test de corrélation de Bravais-Pearson <a href="lectures/L2/chapitre3.pdf">Télécharger le diaporama</a></p></li>
-<li><p>Cours 4 : Tests du <span class="math inline">\(\chi^2\)</span> <a href="lectures/L2/chapitre4.pdf">Télécharger le diaporama</a></p></li>
-<li><p>Cours 5 : Tests non paramétriques basés sur les rangs <a href="lectures/L2/chapitre5.pdf">Télécharger le diaporama</a></p></li>
-<li><p>TD 1 : Tests de comparaison de deux groupes indépendants <a href="lectures/L2/TD1.pdf">Télécharger le diaporama</a></p></li>
-<li><p>TD 2 : Tests de comparaison de deux groupes appariés <a href="lectures/L2/TD2.pdf">Télécharger le diaporama</a></p></li>
-<li><p>TD 3 : Tests de corrélation <a href="lectures/L2/TD3.pdf">Télécharger le diaporama</a></p></li>
-<li><p>TD 4 : Tests du <span class="math inline">\(\chi^2\)</span> <a href="lectures/L2/TD4.pdf">Télécharger le diaporama</a></p></li>
-</ul>
+<section id="ec503-algorithmique-et-programmation" class="level3">
+<h3 class="anchored" data-anchor-id="ec503-algorithmique-et-programmation">EC503 Algorithmique et programmation</h3>
 </section>
-<section id="modèles-danova" class="level1">
-<h1>Modèles d’ANOVA</h1>
-<p>Ce cours est enseigné en Licence 3 à la Faculté de Psychologie au premier semestre. Le chapitre sur les contrastes n’est plus au programme.</p>
-<ul>
-<li><p>Cours 1 : Anova à 1 facteur sur groupes indépendants <a href="lectures/L3/chapitre1.pdf">Télécharger le diaporama</a></p></li>
-<li><p>Cours 2 : Anova à 2 facteurs sur groupes indépendants <a href="lectures/L3/chapitre2.pdf">Télécharger le diaporama</a></p></li>
-<li><p>Cours 3 : Anova à mesures répétées <a href="lectures/L3/chapitre3.pdf">Télécharger le diaporama</a></p></li>
-<li><p>Cours 4 : Plans à deux facteurs sur mesures répétées <a href="lectures/L3/chapitre4.pdf">Télécharger le diaporama</a></p></li>
-<li><p>Cours 5 : Les contrastes <a href="lectures/L3/chapitre5.pdf">Télécharger le diaporama</a></p></li>
-<li><p>TD : Réaliser une ANOVA sur JAMOVI <a href="lectures/L3/TD1.pdf">Télécharger le diaporama</a></p></li>
-</ul>
 </section>
-<section id="régression-linéaire-multiple" class="level1">
-<h1>Régression linéaire multiple</h1>
-<p>Ce cours est enseigné en Licence 3 à la Faculté de Psychologie au deuxième semestre. Le chapitre sur l’ANCOVA n’est plus au programme.</p>
-<ul>
-<li><p>Cours 1 : Régression linéaire simple <a href="lectures/L3/RLMchapitre1.pdf">Télécharger le diaporama</a></p></li>
-<li><p>Cours 2 : Régression linéaire multiple <a href="lectures/L3/RLMchapitre2.pdf">Télécharger le diaporama</a></p></li>
-<li><p>Cours 3 : Comparaison de modèles <a href="lectures/L3/RLMchapitre3.pdf">Télécharger le diaporama</a></p></li>
-<li><p>Cours 4 : Régressions sur variables qualitatives, ANCOVA <a href="lectures/L3/RLMchapitre4.pdf">Télécharger le diaporama</a></p></li>
-</ul>
-</section>
-<section id="cours-de-m1-psychologie" class="level1">
-<h1>Cours de M1 Psychologie</h1>
-<p>Le cours reprend un certain nombre de notions vues en Licence auquel on ajoute les régressions hiérarchiques et la régression logistique. <a href="lectures/M1/cours_M1.pdf">Cours complet</a></p>
-</section>
-<section id="cours-de-m2-psychologie" class="level1">
-<h1>Cours de M2 Psychologie</h1>
-<p>Il s’agit d’une introduction aux modèles de médiation et de modération. <a href="lectures/M1/cours_M2.pdf">Cours complet</a></p>
+<section id="cours-ing2" class="level2">
+<h2 class="anchored" data-anchor-id="cours-ing2">Cours Ing2</h2>
+<section id="ec7851-mathématiques-pour-lingénieur-2" class="level3">
+<h3 class="anchored" data-anchor-id="ec7851-mathématiques-pour-lingénieur-2">EC7851 Mathématiques pour l’ingénieur 2</h3>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

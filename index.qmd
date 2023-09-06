@@ -2,13 +2,30 @@
 title: "Galharret Jean-Michel"
 ---
 
-Je suis enseignant à l'université de Nantes dans la faculté de psychologie. 
-Je suis membre de l'équipe aléa dans le laboratoire Jean-Leray.
+![](image.jpg){fig-align="center" width="50%"}
 
-Mes principales activités de recherche concernent 
+Enseignant chercheur à ONIRIS VetAgroBio, site de la Géraudière, membre du département MSC (Management, Statistique, Communication) et de l'équipe de recherche StatSC.
 
-- la statistique bayésienne appliquée,
+Mes principales activités de recherche concernent
 
-- l'inférence causale,
+-   la statistique bayésienne appliquée,
 
-- la modélisation en équations structurelles.
+-   l'inférence causale,
+
+-   la modélisation en équations structurelles.
+
+# Précédents postes :
+
+## Enseignement :
+
+-   UFR de psychologie (2015-2023)
+-   IUT d'Angers département Génie Biologique (2006-2015)
+
+## Recherche :
+
+-   LMJL Laboratoire de mathématique Jean Leray (2017-2023)
+
+
+# Thèse :
+
+J'ai effectué (et soutenu en 2019) une thèse sous la direction de Anne Philippe au laboratoire Jean-Leray. Elle s'intitule : Statistique bayésienne appliquée en Sciences Humaines et Sociales [HAL](https://hal.archives-ouvertes.fr/tel-02431662).
