@@ -8,7 +8,9 @@ title: "cours ONIRIS"
 
 1.  [Prise en main de R (Séances 1 à 3)](cours_ONIRIS/EC552/1-3_premiers_pas.html)
 
-2.  [Graphiques dans R (Séances 4 et 5)](/EC552/4-5_graphiques_def.pdf)
+2.  [Graphiques dans R (Séances 4 et 5)](cours_ONIRIS/EC552/4-5_graphiques.html)
+
+3. [Programmer dans R (Séances 6 et 7)](cours_ONIRIS/EC552/6-7_programmer_R.html)
 
 ### EC503 Algorithmique et programmation
 
