@@ -8,7 +8,7 @@
 
 <meta name="author" content="Galharret, J.-M.">
 
-<title>Premiers pas dans R</title>
+<title>Website - Premiers pas dans R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -87,23 +87,90 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
 
-<script src="1-3_premiers_pas_files/libs/clipboard/clipboard.min.js"></script>
-<script src="1-3_premiers_pas_files/libs/quarto-html/quarto.js"></script>
-<script src="1-3_premiers_pas_files/libs/quarto-html/popper.min.js"></script>
-<script src="1-3_premiers_pas_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="1-3_premiers_pas_files/libs/quarto-html/anchor.min.js"></script>
-<link href="1-3_premiers_pas_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="1-3_premiers_pas_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="1-3_premiers_pas_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="1-3_premiers_pas_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="1-3_premiers_pas_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
 
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="fullcontent">
+<body class="nav-fixed">
 
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Website</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cours_psycho.html">
+ <span class="menu-text">Stats pour Psycho</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cours_ONIRIS.html">
+ <span class="menu-text">Cours ONIRIS</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publications.html">
+ <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../communications.html">
+ <span class="menu-text">Communications</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
@@ -126,8 +193,54 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </div>
     
   
-  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#présentation-rapide-de-r" id="toc-présentation-rapide-de-r" class="nav-link active" data-scroll-target="#présentation-rapide-de-r">Présentation rapide de R</a></li>
+  <li><a href="#fichiers-gérés-par-r" id="toc-fichiers-gérés-par-r" class="nav-link" data-scroll-target="#fichiers-gérés-par-r">Fichiers gérés par R</a></li>
+  <li><a href="#interfaces-de-r" id="toc-interfaces-de-r" class="nav-link" data-scroll-target="#interfaces-de-r">Interfaces de R :</a></li>
+  <li><a href="#les-librairies-de-r-ou-packages" id="toc-les-librairies-de-r-ou-packages" class="nav-link" data-scroll-target="#les-librairies-de-r-ou-packages">Les librairies de R (ou packages)</a></li>
+  <li><a href="#premières-commandes" id="toc-premières-commandes" class="nav-link" data-scroll-target="#premières-commandes">Premières commandes</a></li>
+  <li><a href="#la-définition-des-variables" id="toc-la-définition-des-variables" class="nav-link" data-scroll-target="#la-définition-des-variables">La définition des variables</a></li>
+  <li><a href="#les-vecteurs" id="toc-les-vecteurs" class="nav-link" data-scroll-target="#les-vecteurs">Les vecteurs</a>
+  <ul class="collapse">
+  <li><a href="#indexation-et-longueur-dun-vecteur" id="toc-indexation-et-longueur-dun-vecteur" class="nav-link" data-scroll-target="#indexation-et-longueur-dun-vecteur">Indexation et longueur d’un vecteur</a></li>
+  <li><a href="#les-calculs-de-base-avec-un-vecteur" id="toc-les-calculs-de-base-avec-un-vecteur" class="nav-link" data-scroll-target="#les-calculs-de-base-avec-un-vecteur">Les calculs de base avec un vecteur</a></li>
+  <li><a href="#ouvrir-laide" id="toc-ouvrir-laide" class="nav-link" data-scroll-target="#ouvrir-laide">Ouvrir l’aide</a></li>
+  <li><a href="#un-peu-de-logique" id="toc-un-peu-de-logique" class="nav-link" data-scroll-target="#un-peu-de-logique">Un peu de logique</a></li>
+  <li><a href="#exercices" id="toc-exercices" class="nav-link" data-scroll-target="#exercices">Exercices</a>
+  <ul class="collapse">
+  <li><a href="#exo-1" id="toc-exo-1" class="nav-link" data-scroll-target="#exo-1">Exo 1 :</a></li>
+  <li><a href="#exo-2" id="toc-exo-2" class="nav-link" data-scroll-target="#exo-2">Exo 2 :</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#les-matrices" id="toc-les-matrices" class="nav-link" data-scroll-target="#les-matrices">Les matrices</a>
+  <ul class="collapse">
+  <li><a href="#définition-et-fonctions-de-base" id="toc-définition-et-fonctions-de-base" class="nav-link" data-scroll-target="#définition-et-fonctions-de-base">Définition et fonctions de base</a></li>
+  <li><a href="#indexation-des-éléments-dune-matrice" id="toc-indexation-des-éléments-dune-matrice" class="nav-link" data-scroll-target="#indexation-des-éléments-dune-matrice">Indexation des éléments d’une matrice</a></li>
+  </ul></li>
+  <li><a href="#les-data-frames" id="toc-les-data-frames" class="nav-link" data-scroll-target="#les-data-frames">Les data frames</a>
+  <ul class="collapse">
+  <li><a href="#création-dun-data-frame" id="toc-création-dun-data-frame" class="nav-link" data-scroll-target="#création-dun-data-frame">Création d’un data frame</a></li>
+  <li><a href="#les-fonctions-utiles-pour-les-data-frame" id="toc-les-fonctions-utiles-pour-les-data-frame" class="nav-link" data-scroll-target="#les-fonctions-utiles-pour-les-data-frame">Les fonctions utiles pour les data frame</a>
+  <ul class="collapse">
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">summary</a></li>
+  <li><a href="#apply" id="toc-apply" class="nav-link" data-scroll-target="#apply">apply</a></li>
+  </ul></li>
+  <li><a href="#importation-dun-data-frame-inclus-dans-un-package" id="toc-importation-dun-data-frame-inclus-dans-un-package" class="nav-link" data-scroll-target="#importation-dun-data-frame-inclus-dans-un-package">Importation d’un data frame inclus dans un package</a></li>
+  <li><a href="#importation-dune-base-de-données-externe" id="toc-importation-dune-base-de-données-externe" class="nav-link" data-scroll-target="#importation-dune-base-de-données-externe">Importation d’une base de données externe</a></li>
+  <li><a href="#exercice-sur-les-data-frame" id="toc-exercice-sur-les-data-frame" class="nav-link" data-scroll-target="#exercice-sur-les-data-frame">Exercice sur les data frame</a></li>
+  </ul></li>
+  <li><a href="#pour-aller-plus-loin" id="toc-pour-aller-plus-loin" class="nav-link" data-scroll-target="#pour-aller-plus-loin">Pour aller plus loin</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
@@ -409,11 +522,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 <div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(<span class="sc">-</span><span class="dv">10</span><span class="sc">:</span><span class="dv">10</span>,<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 8</code></pre>
+<pre><code>[1] -7</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(<span class="sc">-</span><span class="dv">10</span><span class="sc">:</span><span class="dv">10</span>,<span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] -8 -3  8</code></pre>
+<pre><code>[1] -2 -5  4</code></pre>
 </div>
 </div>
 </section>
@@ -836,10 +949,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode cell-code" id="cb116"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb116-1"><a href="#cb116-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(mtcars<span class="sc">$</span>vs<span class="sc">==</span><span class="st">"V"</span> <span class="sc">&amp;</span> mtcars<span class="sc">$</span>carb<span class="sc">&gt;=</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
+
+
 </section>
 
-</main>
-<!-- /main column -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
