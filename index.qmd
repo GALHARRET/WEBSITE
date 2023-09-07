@@ -2,7 +2,7 @@
 title: "Galharret Jean-Michel"
 ---
 
-![](image.jpg){fig-align="center" width="50%"}
+![](image1.png){fig-align="center" width="50%"}
 
 Enseignant chercheur à ONIRIS VetAgroBio, site de la Géraudière, membre du département MSC (Management, Statistique, Communication) et de l'équipe de recherche StatSC.
 
@@ -24,7 +24,6 @@ Mes principales activités de recherche concernent
 ## Recherche :
 
 -   LMJL Laboratoire de mathématique Jean Leray (2017-2023)
-
 
 # Thèse :
 
