@@ -8,7 +8,7 @@ editor: visual
 
 # Présentation rapide de R
 
-Bref historique : 
+Bref historique :
 
 -   R est à la fois un logiciel et un langage. Il est gratuit et open source.
 
@@ -36,18 +36,15 @@ Bref historique :
 
 # Les librairies de R (ou packages)
 
-De très nombreux packages ont été développés pour R, ils permettent d'ajouter de nouvelles fonctionnalités. 
-Pour installer un package on va dans Tools -> Install Packages
+De très nombreux packages ont été développés pour R, ils permettent d'ajouter de nouvelles fonctionnalités. Pour installer un package on va dans Tools -\> Install Packages
 
 ![Installer un package](TD1_files/fig0.png)
 
-Par exemple (ne le faites pas ) on installe le package equivalence, ce qui est très important c'est qu'il faut 
-demander à R installer toutes les dépendances du package. Ensuite il faut absolument charger le package dans le script pour pouvoir l'utiliser.
+Par exemple (ne le faites pas ) on installe le package equivalence, ce qui est très important c'est qu'il faut demander à R installer toutes les dépendances du package. Ensuite il faut absolument charger le package dans le script pour pouvoir l'utiliser.
 
 ```{r eval=FALSE}
 library(equivalence)
 ```
-
 
 # Premières commandes
 
@@ -72,7 +69,6 @@ Une variable est un objet référencé dans le programme qui associe un identifi
 -   ***La valeur*** est ce que contient la variable,
 -   ***Le type*** est l'ensemble dans lequel la variable prend sa valeur.
 
-
 ```{r echo=TRUE}
 x=2
 print(x)
@@ -80,7 +76,6 @@ mode(x)
 ## Supprimer x
 rm(x)
 ```
-
 
 Les variables contenant des caractères (on utilise "")
 
@@ -90,7 +85,6 @@ print(x)
 mode(x)
 ```
 
-
 Les variables contenant des booléens (vrai ou faux)
 
 ```{r echo=TRUE}
@@ -98,8 +92,6 @@ x<-TRUE
 print(x)
 mode(x)
 ```
-
-
 
 # Les vecteurs
 
@@ -223,9 +215,9 @@ sample(-10:10,3)
 
 ## Un peu de logique
 
-1. l'opérateur | correspond à OU : A | B est faux lorsque les deux événements A et B sont faux simultanément et est vrai dans tous les autres cas.
+1.  l'opérateur \| correspond à OU : A \| B est faux lorsque les deux événements A et B sont faux simultanément et est vrai dans tous les autres cas.
 
-2. l'opérateur & correspond à ET : A & B est vrai uniquement lorsque les deux événements A et B sont vrais et est faux dans tous les autres cas.
+2.  l'opérateur & correspond à ET : A & B est vrai uniquement lorsque les deux événements A et B sont vrais et est faux dans tous les autres cas.
 
 On définit un vecteur
 
@@ -278,7 +270,7 @@ which(x>=5 & x<=10)
 
 1.  Créer un vecteur y contenant les entiers pairs de inférieurs à 100 grâce à la fonction seq.
 
-2.	Ajouter à y les entiers impairs inférieurs à 100. Vérifier que l’ajout s’est fait correctement.
+2.  Ajouter à y les entiers impairs inférieurs à 100. Vérifier que l'ajout s'est fait correctement.
 
 3.  A l'aide de la fonction length déterminer la taille du vecteur y final.
 
@@ -307,7 +299,6 @@ dim(A)
 ```
 
 Le résultat est donc un vecteur ayant deux éléments le nombre de ligne et le nombre de colonnes
-
 
 ## Indexation des éléments d'une matrice
 
@@ -342,20 +333,22 @@ L'indexation des éléments dans un data-frame est la même que dans une matrice
 df[1,1]
 ```
 
-On peut également sélectionner une colonne du data frame via $
+On peut également sélectionner une colonne du data frame via \$
 
 ```{r eval=F}
 df$NoteF
 ```
 
 ## Les fonctions utiles pour les data frame
-### summary 
+
+### summary
 
 Cette fonction permet de résumer l'ensemble des variables du data frame.
 
 ```{r}
 summary(df)
 ```
+
 ### apply
 
 La fonction apply permet d'appliquer une fonction sur les lignes (1) ou les colonnes d'un data frame : par exemple si on souhaite appliquer la fonction moyenne (***mean***) sur les colonnes du data frame df on utilise :
@@ -363,8 +356,8 @@ La fonction apply permet d'appliquer une fonction sur les lignes (1) ou les colo
 ```{r}
 apply(df[,1:2],2,mean)
 ```
-Remarque : on n'a utilisé que les deux premières colonnes du data frame car la troisième n'est pas numérique (donc on ne peut pas calculer sa moyenne).
 
+Remarque : on n'a utilisé que les deux premières colonnes du data frame car la troisième n'est pas numérique (donc on ne peut pas calculer sa moyenne).
 
 ## Importation d'un data frame inclus dans un package
 
@@ -402,9 +395,7 @@ On peut utiliser une interface graphique pour ouvrir les fichiers contenant le d
 
 On va importer le data frame contenu dans le fichier bordeaux.csv disponible sur Connect (vous devez le télécharger).
 
-
-Vous avez deux solutions : 
-***From text (base)***
+Vous avez deux solutions : ***From text (base)***
 
 ![Importation avec la librairie base](TD1_files/fig4-0.png)
 
@@ -415,7 +406,6 @@ Vous avez deux solutions :
 Ensuite il est recommandé de copier/coller la ligne de commande dans le script R afin de pas à avoir à reproduire la manipulation à chaque session de travail sur le fichier bordeaux.csv
 
 ![La fonction read_csv()](TD1_files/fig5.png)
-
 
 ## Exercice sur les data frame
 
