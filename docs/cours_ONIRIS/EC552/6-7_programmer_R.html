@@ -222,19 +222,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">runif</span>(<span class="dv">1</span>,<span class="sc">-</span><span class="dv">10</span>,<span class="dv">10</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(x<span class="sc">&gt;</span><span class="dv">0</span>){<span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"La valeur"</span>,<span class="fu">round</span>(x,<span class="dv">1</span>),<span class="st">"est positive"</span>,<span class="at">sep=</span><span class="st">" "</span>))}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "La valeur 0.3 est positive"</code></pre>
-</div>
 </div>
 <p><strong><em>if(condition){instruction1}else{instruction2}</em></strong> permet de calculer l’instruction1 lorsque la condition est vraie et l’instruction2 lorsque la condition est fausse.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">runif</span>(<span class="dv">1</span>,<span class="sc">-</span><span class="dv">10</span>,<span class="dv">10</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(x<span class="sc">&gt;</span><span class="dv">0</span>){</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"La valeur"</span>,<span class="fu">round</span>(x,<span class="dv">1</span>),<span class="st">"est positive"</span>,<span class="at">sep=</span><span class="st">" "</span>))}<span class="cf">else</span>{</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"La valeur"</span>,<span class="fu">round</span>(x,<span class="dv">1</span>),<span class="st">"est négative"</span>,<span class="at">sep=</span><span class="st">" "</span>))}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "La valeur -6.6 est négative"</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">runif</span>(<span class="dv">1</span>,<span class="sc">-</span><span class="dv">10</span>,<span class="dv">10</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(x<span class="sc">&gt;</span><span class="dv">0</span>){</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"La valeur"</span>,<span class="fu">round</span>(x,<span class="dv">1</span>),<span class="st">"est positive"</span>,<span class="at">sep=</span><span class="st">" "</span>))}<span class="cf">else</span>{</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"La valeur"</span>,<span class="fu">round</span>(x,<span class="dv">1</span>),<span class="st">"est négative"</span>,<span class="at">sep=</span><span class="st">" "</span>))}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>On peut imbriquer plusieurs conditions if.</p>
 <p><strong><em>Rappel :</em></strong></p>
@@ -251,10 +245,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 <details>
 <summary>Voir la correction</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">runif</span>(<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">10</span>)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>y<span class="ot">&lt;-</span><span class="fu">runif</span>(<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">10</span>)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(x<span class="sc">&lt;</span>y){z<span class="ot">&lt;-</span>x<span class="sc">+</span><span class="dv">1</span>}<span class="cf">else</span> <span class="cf">if</span>(x<span class="sc">&gt;</span><span class="dv">5</span> <span class="sc">&amp;</span> y<span class="sc">&gt;</span><span class="dv">5</span>){z<span class="ot">&lt;-</span>x<span class="sc">+</span><span class="dv">2</span>}<span class="cf">else</span>{z<span class="ot">&lt;-</span>x} </span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"x="</span>,x,<span class="st">"y="</span>,y,<span class="st">"z="</span>,z))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">runif</span>(<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">10</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>y<span class="ot">&lt;-</span><span class="fu">runif</span>(<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">10</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(x<span class="sc">&lt;</span>y){z<span class="ot">&lt;-</span>x<span class="sc">+</span><span class="dv">1</span>}<span class="cf">else</span> <span class="cf">if</span>(x<span class="sc">&gt;</span><span class="dv">5</span> <span class="sc">&amp;</span> y<span class="sc">&gt;</span><span class="dv">5</span>){z<span class="ot">&lt;-</span>x<span class="sc">+</span><span class="dv">2</span>}<span class="cf">else</span>{z<span class="ot">&lt;-</span>x} </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"x="</span>,x,<span class="st">"y="</span>,y,<span class="st">"z="</span>,z))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>
@@ -265,31 +259,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong><em>for (var in seq) {commandes}</em></strong> permet de définir un nombre d’itérations dans une séquence.</p>
 <p>Par exemple on veut Stocker dans la variable x la somme des entiers de 1 à n où n est fixé par l’utilisateur :</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>n<span class="ot">&lt;-</span><span class="dv">100</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="dv">0</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n){x<span class="ot">&lt;-</span>x<span class="sc">+</span>i}</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>n<span class="ot">&lt;-</span><span class="dv">100</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="dv">0</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n){x<span class="ot">&lt;-</span>x<span class="sc">+</span>i}</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Mais on peut aussi faire la somme de tous les entiers impairs compris entre 1 et n</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>n<span class="ot">&lt;-</span><span class="dv">100</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="dv">0</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>impairs<span class="ot">&lt;-</span><span class="fu">seq</span>(<span class="dv">1</span>,n,<span class="dv">2</span>)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> impairs){x<span class="ot">&lt;-</span>x<span class="sc">+</span>i}</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>n<span class="ot">&lt;-</span><span class="dv">100</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="dv">0</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>impairs<span class="ot">&lt;-</span><span class="fu">seq</span>(<span class="dv">1</span>,n,<span class="dv">2</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> impairs){x<span class="ot">&lt;-</span>x<span class="sc">+</span>i}</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong><em>Exercice :</em></strong> On considère deux variables <span class="math inline">\(x,y\)</span> initialisées à 0. On propose le jeu suivant : “à chaque itération on tire un nombre au hasard entre 0 et 1, lorsque ce nombre est supérieur à 0.5 on incrémente la valeur précédente de <span class="math inline">\(y\)</span> de 1, sinon c’est la valeur précédente de <span class="math inline">\(z\)</span> qui est incrémentée de 1.”</p>
 <p>Le joueur gagne si au bout de <span class="math inline">\(n\)</span> itérations <span class="math inline">\(y&gt;z.\)</span> Ecrire le programme pour <span class="math inline">\(n=10.\)</span></p>
 <div class="cell">
 <details>
 <summary>Voir la correction</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>n<span class="ot">&lt;-</span><span class="dv">10</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>y<span class="ot">=</span>z<span class="ot">=</span><span class="dv">0</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n){</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">runif</span>(<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">1</span>)</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(x<span class="sc">&gt;</span><span class="fl">0.5</span>){y<span class="ot">&lt;-</span>y<span class="sc">+</span><span class="dv">1</span>}<span class="cf">else</span>{z<span class="ot">&lt;-</span>z<span class="sc">+</span><span class="dv">1</span>}</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(y<span class="sc">&gt;</span>z){<span class="fu">print</span>(<span class="st">"Gagnant"</span>)}<span class="cf">else</span>{<span class="fu">print</span>(<span class="st">"Perdant"</span>)}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>n<span class="ot">&lt;-</span><span class="dv">10</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>y<span class="ot">=</span>z<span class="ot">=</span><span class="dv">0</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n){</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">runif</span>(<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">1</span>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(x<span class="sc">&gt;</span><span class="fl">0.5</span>){y<span class="ot">&lt;-</span>y<span class="sc">+</span><span class="dv">1</span>}<span class="cf">else</span>{z<span class="ot">&lt;-</span>z<span class="sc">+</span><span class="dv">1</span>}</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(y<span class="sc">&gt;</span>z){<span class="fu">print</span>(<span class="st">"Gagnant"</span>)}<span class="cf">else</span>{<span class="fu">print</span>(<span class="st">"Perdant"</span>)}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>
@@ -297,10 +291,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 class="anchored" data-anchor-id="while">WHILE</h2>
 <p><strong><em>while(condition){instruction}</em></strong> répète une instruction tant que la condition considérée est vraie. Attention, la condition est évaluée avant toute exécution dans while.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>i<span class="ot">&lt;-</span><span class="dv">1</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> (i<span class="sc">&lt;</span><span class="dv">10</span>){</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">print</span>(i)</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>   i<span class="ot">=</span>i<span class="sc">+</span><span class="dv">1</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>i<span class="ot">&lt;-</span><span class="dv">1</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> (i<span class="sc">&lt;</span><span class="dv">10</span>){</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">print</span>(i)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>   i<span class="ot">=</span>i<span class="sc">+</span><span class="dv">1</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong><em>Exercice</em></strong></p>
 <ol type="1">
@@ -315,7 +309,40 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Créer le vecteur nommé vecPM5 contenant tous les nombres de 1 à 100 qui ne sont pas des multiples de 5 (avec une boucle puis sans). Penser à la fonction <strong><em>floor</em></strong> qui calcule la partie entière.</p></li>
 </ol>
 <div class="cell">
-
+<details>
+<summary>Voir la correction</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>vecAlea<span class="ot">&lt;-</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>,<span class="dv">100</span>,T)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="do">## Q1</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="do">## AVEC la boucle</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>IND<span class="ot">&lt;-</span><span class="fu">c</span>()</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>){ </span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(vecAlea[i]<span class="sc">&gt;</span><span class="dv">50</span>){IND<span class="ot">&lt;-</span><span class="fu">c</span>(IND,i)}</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co"># SANS LA BOUCLE</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>IND<span class="ot">&lt;-</span><span class="fu">which</span>(vecAlea<span class="sc">&gt;</span><span class="dv">50</span>)</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>VEC<span class="ot">&lt;-</span>vecAlea[IND]</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="do">## Q2 </span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>M<span class="ot">&lt;-</span><span class="fu">max</span>(vecAlea)</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>IND_M<span class="ot">&lt;-</span><span class="fu">c</span>()</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>){ </span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(vecAlea[i]<span class="sc">==</span>M){IND_M<span class="ot">&lt;-</span><span class="fu">c</span>(IND_M,i)}</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(IND_M)</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(<span class="fu">which</span>(vecAlea<span class="sc">==</span>M))</span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a><span class="do">## Q3</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">c</span>()</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>i<span class="ot">&lt;-</span><span class="dv">1</span></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span>(i<span class="sc">&lt;=</span><span class="dv">100</span>){</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(i<span class="sc">/</span><span class="dv">5</span><span class="sc">-</span><span class="fu">floor</span>(i<span class="sc">/</span><span class="dv">5</span>)<span class="sc">&gt;</span><span class="dv">0</span>){x<span class="ot">&lt;-</span><span class="fu">c</span>(x,i)}<span class="cf">else</span>{x<span class="ot">&lt;-</span>x}</span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>  i<span class="ot">&lt;-</span>i<span class="sc">+</span><span class="dv">1</span></span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 </section>
 </section>
@@ -323,64 +350,45 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1>Ecrire une fonction en R :</h1>
 <p>On veut écrire une fonction qui étant donnée le rayon <span class="math inline">\(r\)</span> d’un cercle permet de calculer son périmètre <span class="math inline">\(P=2\pi r\)</span>, on note cette fonction perim()</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>perim<span class="ot">&lt;-</span><span class="cf">function</span>(r){</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>r)</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">perim</span>(<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 6.283185</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>perim<span class="ot">&lt;-</span><span class="cf">function</span>(r){</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>r)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">perim</span>(<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>On remarque que dans le langage R il n’est pas nécessaire de donner le type des arguments (entier, carcatère,…) la fonction s’appliquera sauf si le type n’est pas correct</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">perim</span>(<span class="st">"rayon"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">perim</span>(<span class="st">"rayon"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>On peut améliorer cette fonction en indiquant à l’utilisateur que la fonction ne sera calculée que lorsque <span class="math inline">\(r&gt;0\)</span> :</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>perim<span class="ot">&lt;-</span><span class="cf">function</span>(r){</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(r<span class="sc">&gt;</span><span class="dv">0</span>){<span class="fu">return</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>r)}<span class="cf">else</span>{<span class="fu">return</span>(<span class="st">"On ne calcule le périmètre que lorsque r&gt;0"</span>)}</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="fu">perim</span>(<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 6.283185</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">perim</span>(<span class="sc">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "On ne calcule le périmètre que lorsque r&gt;0"</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>perim<span class="ot">&lt;-</span><span class="cf">function</span>(r){</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(r<span class="sc">&gt;</span><span class="dv">0</span>){<span class="fu">return</span>(<span class="dv">2</span><span class="sc">*</span>pi<span class="sc">*</span>r)}<span class="cf">else</span>{<span class="fu">return</span>(<span class="st">"On ne calcule le périmètre que lorsque r&gt;0"</span>)}</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">perim</span>(<span class="dv">1</span>)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">perim</span>(<span class="sc">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Par contre l’erreur reste identique si on applique la fonction périmètre à “rayon”. On peut également définir des fonctions qui ont plusieurs arguments en entrée et qui peuvent retourner plusieurs valeurs en sortie.</p>
 <p>Autre Exemple : On va écrire une fonction restangle() ayant pour arguments L et l qui renvoie le périmètre <span class="math inline">\(P=2\times(L+l)\)</span> et l’aire <span class="math inline">\(A=L\times l\)</span> du rectangle.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>rectangle<span class="ot">&lt;-</span><span class="cf">function</span>(L,l){</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  P<span class="ot">=</span><span class="dv">2</span><span class="sc">*</span>(L<span class="sc">+</span>l)</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  A<span class="ot">=</span>L<span class="sc">*</span>l</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">list</span>(<span class="at">Perim=</span>P,<span class="at">Aire=</span>A))</span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="fu">rectangle</span>(<span class="dv">11</span>,<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>$Perim
-[1] 42
-
-$Aire
-[1] 110</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Que le périmètre :</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rectangle</span>(<span class="dv">11</span>,<span class="dv">10</span>)<span class="sc">$</span>Perim</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 42</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>rectangle<span class="ot">&lt;-</span><span class="cf">function</span>(L,l){</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  P<span class="ot">=</span><span class="dv">2</span><span class="sc">*</span>(L<span class="sc">+</span>l)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  A<span class="ot">=</span>L<span class="sc">*</span>l</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">list</span>(<span class="at">Perim=</span>P,<span class="at">Aire=</span>A))</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="fu">rectangle</span>(<span class="dv">11</span>,<span class="dv">10</span>)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="do">## Que le périmètre :</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="fu">rectangle</span>(<span class="dv">11</span>,<span class="dv">10</span>)<span class="sc">$</span>Perim</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><strong><em>Exercice :</em></strong></p>
 <p>Créér une fonction SomEnt() ayant pour argument un nombre entier n et qui retourne la somme des entiers inférieurs à n.</p>
 <div class="cell">
 <details>
 <summary>Voir la correction</summary>
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>SomEnt<span class="ot">&lt;-</span><span class="cf">function</span>(n){</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  x<span class="ot">&lt;-</span><span class="dv">0</span></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n) x<span class="ot">&lt;-</span>x<span class="sc">+</span>i</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(x)</span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>SomEnt<span class="ot">&lt;-</span><span class="cf">function</span>(n){</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  x<span class="ot">&lt;-</span><span class="dv">0</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>n) x<span class="ot">&lt;-</span>x<span class="sc">+</span>i</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(x)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>
@@ -393,11 +401,11 @@ $Aire
 <div class="cell">
 <details>
 <summary>Voir la correction</summary>
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>droite<span class="ot">&lt;-</span><span class="cf">function</span>(x,y){</span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  b<span class="ot">&lt;-</span>(<span class="fu">mean</span>(x<span class="sc">*</span>y)<span class="sc">-</span><span class="fu">mean</span>(x)<span class="sc">*</span><span class="fu">mean</span>(y))<span class="sc">/</span>(<span class="fu">mean</span>((x<span class="sc">-</span><span class="fu">mean</span>(x))<span class="sc">^</span><span class="dv">2</span>))</span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  a<span class="ot">&lt;-</span><span class="fu">mean</span>(y)<span class="sc">-</span>b<span class="sc">*</span><span class="fu">mean</span>(x)</span>
-<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">list</span>(<span class="at">a=</span>a,<span class="at">b=</span>b))</span>
-<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>droite<span class="ot">&lt;-</span><span class="cf">function</span>(x,y){</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  b<span class="ot">&lt;-</span>(<span class="fu">mean</span>(x<span class="sc">*</span>y)<span class="sc">-</span><span class="fu">mean</span>(x)<span class="sc">*</span><span class="fu">mean</span>(y))<span class="sc">/</span>(<span class="fu">mean</span>((x<span class="sc">-</span><span class="fu">mean</span>(x))<span class="sc">^</span><span class="dv">2</span>))</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  a<span class="ot">&lt;-</span><span class="fu">mean</span>(y)<span class="sc">-</span>b<span class="sc">*</span><span class="fu">mean</span>(x)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">list</span>(<span class="at">a=</span>a,<span class="at">b=</span>b))</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section>
@@ -405,34 +413,33 @@ $Aire
 <h2 class="anchored" data-anchor-id="exercice-2-boucles-et-graphiques">Exercice 2 : Boucles et graphiques</h2>
 <p>Reprendre la base de données iris :</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"iris"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"iris"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol type="1">
 <li><p>Utiliser une boucle de manière à faire une boîte à moustaches par variable quantitative Sepal.Length, Sepal.Width, Petal.Length, Petal.Width selon l’espèce Species.</p></li>
 <li><p>Utiliser une boucle de reproduire le graphique suivant (on pensera à utiliser la fonction <strong><em>abline</em></strong> pour ajouter la droite des moindres carrés):</p></li>
 </ol>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <details>
 <summary>Voir la correction</summary>
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>){</span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>    esp<span class="ot">&lt;-</span><span class="fu">levels</span>(iris<span class="sc">$</span>Species)[i]</span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>    D<span class="ot">&lt;-</span><span class="fu">droite</span>(iris<span class="sc">$</span>Sepal.Length[iris<span class="sc">$</span>Species<span class="sc">==</span>esp],iris<span class="sc">$</span>Sepal.Width[iris<span class="sc">$</span>Species<span class="sc">==</span>esp])</span>
-<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot</span>(iris<span class="sc">$</span>Sepal.Length[iris<span class="sc">$</span>Species<span class="sc">==</span>esp],iris<span class="sc">$</span>Sepal.Width[iris<span class="sc">$</span>Species<span class="sc">==</span>esp],</span>
-<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>         <span class="at">main=</span><span class="fu">paste</span>(<span class="st">"Pour l'espèce"</span>,esp),<span class="at">xlab=</span><span class="st">"L Sépale"</span>,<span class="at">ylab=</span><span class="st">"l Sépale"</span>,<span class="at">pch=</span><span class="dv">20</span>)</span>
-<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">abline</span>(<span class="at">a=</span>D<span class="sc">$</span>a,<span class="at">b=</span>D<span class="sc">$</span>b,<span class="at">col=</span><span class="dv">2</span>,<span class="at">lty=</span><span class="dv">2</span>,<span class="at">lwd=</span><span class="dv">2</span>)</span>
-<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">text</span>(<span class="fu">min</span>(iris<span class="sc">$</span>Sepal.Length[iris<span class="sc">$</span>Species<span class="sc">==</span>esp])<span class="sc">+</span><span class="dv">1</span>,<span class="fu">max</span>(iris<span class="sc">$</span>Sepal.Width[iris<span class="sc">$</span>Species<span class="sc">==</span>esp]),</span>
-<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>         <span class="fu">paste</span>(<span class="st">"y="</span>,<span class="fu">round</span>(D<span class="sc">$</span>a,<span class="dv">1</span>),<span class="st">"+"</span>,<span class="fu">round</span>(D<span class="sc">$</span>b,<span class="dv">1</span>),<span class="st">"*x"</span>,<span class="at">sep=</span><span class="st">""</span>),<span class="at">col=</span><span class="dv">2</span>,<span class="at">cex=</span><span class="fl">0.75</span>)</span>
-<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>))</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>){</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    esp<span class="ot">&lt;-</span><span class="fu">levels</span>(iris<span class="sc">$</span>Species)[i]</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    D<span class="ot">&lt;-</span><span class="fu">droite</span>(iris<span class="sc">$</span>Sepal.Length[iris<span class="sc">$</span>Species<span class="sc">==</span>esp],iris<span class="sc">$</span>Sepal.Width[iris<span class="sc">$</span>Species<span class="sc">==</span>esp])</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">plot</span>(iris<span class="sc">$</span>Sepal.Length[iris<span class="sc">$</span>Species<span class="sc">==</span>esp],iris<span class="sc">$</span>Sepal.Width[iris<span class="sc">$</span>Species<span class="sc">==</span>esp],</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">main=</span><span class="fu">paste</span>(<span class="st">"Pour l'espèce"</span>,esp),<span class="at">xlab=</span><span class="st">"L Sépale"</span>,<span class="at">ylab=</span><span class="st">"l Sépale"</span>,<span class="at">pch=</span><span class="dv">20</span>)</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">abline</span>(<span class="at">a=</span>D<span class="sc">$</span>a,<span class="at">b=</span>D<span class="sc">$</span>b,<span class="at">col=</span><span class="dv">2</span>,<span class="at">lty=</span><span class="dv">2</span>,<span class="at">lwd=</span><span class="dv">2</span>)</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">text</span>(<span class="fu">min</span>(iris<span class="sc">$</span>Sepal.Length[iris<span class="sc">$</span>Species<span class="sc">==</span>esp])<span class="sc">+</span><span class="dv">1</span>,<span class="fu">max</span>(iris<span class="sc">$</span>Sepal.Width[iris<span class="sc">$</span>Species<span class="sc">==</span>esp]),</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>         <span class="fu">paste</span>(<span class="st">"y="</span>,<span class="fu">round</span>(D<span class="sc">$</span>a,<span class="dv">1</span>),<span class="st">"+"</span>,<span class="fu">round</span>(D<span class="sc">$</span>b,<span class="dv">1</span>),<span class="st">"*x"</span>,<span class="at">sep=</span><span class="st">""</span>),<span class="at">col=</span><span class="dv">2</span>,<span class="at">cex=</span><span class="fl">0.75</span>)</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="6-7_programmer_R_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="672"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="6-7_programmer_R_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
 </div>
-<div class="cell-output-display">
-<p><img src="6-7_programmer_R_files/figure-html/unnamed-chunk-16-2.png" class="img-fluid" width="672"></p>
-</div>
-<div class="cell-output-display">
-<p><img src="6-7_programmer_R_files/figure-html/unnamed-chunk-16-3.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 
