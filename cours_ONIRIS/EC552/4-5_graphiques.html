@@ -261,18 +261,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>hist (histogramme).</p></li>
 </ul>
 <p>On va s’intéresser uniquement à la longeur des Sépales et réaliser les trois types de graphique :</p>
-<div class="cell">
+<div class="cell" data-layout-align="center" height="5" width="5">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(iris<span class="sc">$</span>Sepal.Length)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dotchart</span>(iris<span class="sc">$</span>Sepal.Length)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-3-2.png" class="img-fluid" width="672"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-3-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(iris<span class="sc">$</span>Sepal.Length)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-3-3.png" class="img-fluid" width="672"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-3-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 <p>Les graphiques dans R offrent de très nombreux paramètres (titre principal, titre des axes …)</p>
@@ -332,12 +344,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>On peut aussi faire plusieurs histogrammes. On va scinder la fenêtre graphique en plusieurs parties <strong><em>par(mfrow=c(v,h))</em></strong> où v est le nombre de séparations verticales et h horizontales. Ici on a trois espèces d’iris donc on prend i=3 et j=1 :</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>))</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(iris<span class="sc">$</span>Sepal.Length[iris<span class="sc">$</span>Species<span class="sc">==</span><span class="fu">levels</span>(iris<span class="sc">$</span>Species)[<span class="dv">1</span>]],<span class="at">main=</span><span class="fu">paste</span>(<span class="st">"Pour l'espèce "</span>,<span class="fu">levels</span>(iris<span class="sc">$</span>Species)[<span class="dv">1</span>]),</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab=</span><span class="st">"Longueur du Sépale"</span>,<span class="at">ylab=</span><span class="st">"Fréquence"</span>)</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(iris<span class="sc">$</span>Sepal.Length[iris<span class="sc">$</span>Species<span class="sc">==</span><span class="fu">levels</span>(iris<span class="sc">$</span>Species)[<span class="dv">2</span>]],<span class="at">main=</span><span class="fu">paste</span>(<span class="st">"Pour l'espèce "</span>,<span class="fu">levels</span>(iris<span class="sc">$</span>Species)[<span class="dv">2</span>]),</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab=</span><span class="st">"Longueur du Sépale"</span>,<span class="at">ylab=</span><span class="st">"Fréquence"</span>)</span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(iris<span class="sc">$</span>Sepal.Length[iris<span class="sc">$</span>Species<span class="sc">==</span><span class="fu">levels</span>(iris<span class="sc">$</span>Species)[<span class="dv">3</span>]],<span class="at">main=</span><span class="fu">paste</span>(<span class="st">"Pour l'espèce "</span>,<span class="fu">levels</span>(iris<span class="sc">$</span>Species)[<span class="dv">3</span>]),</span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab=</span><span class="st">"Longueur du Sépale"</span>,<span class="at">ylab=</span><span class="st">"Fréquence"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(iris<span class="sc">$</span>Sepal.Length[iris<span class="sc">$</span>Species<span class="sc">==</span><span class="fu">levels</span>(iris<span class="sc">$</span>Species)[<span class="dv">1</span>]],</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">main=</span><span class="fu">paste</span>(<span class="st">"Pour l'espèce "</span>,<span class="fu">levels</span>(iris<span class="sc">$</span>Species)[<span class="dv">1</span>]),</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab=</span><span class="st">"Longueur du Sépale"</span>,<span class="at">ylab=</span><span class="st">"Fréquence"</span>)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(iris<span class="sc">$</span>Sepal.Length[iris<span class="sc">$</span>Species<span class="sc">==</span><span class="fu">levels</span>(iris<span class="sc">$</span>Species)[<span class="dv">2</span>]],</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">main=</span><span class="fu">paste</span>(<span class="st">"Pour l'espèce "</span>,<span class="fu">levels</span>(iris<span class="sc">$</span>Species)[<span class="dv">2</span>]),</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab=</span><span class="st">"Longueur du Sépale"</span>,<span class="at">ylab=</span><span class="st">"Fréquence"</span>)</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(iris<span class="sc">$</span>Sepal.Length[iris<span class="sc">$</span>Species<span class="sc">==</span><span class="fu">levels</span>(iris<span class="sc">$</span>Species)[<span class="dv">3</span>]],</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>     <span class="at">main=</span><span class="fu">paste</span>(<span class="st">"Pour l'espèce "</span>,<span class="fu">levels</span>(iris<span class="sc">$</span>Species)[<span class="dv">3</span>]),</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab=</span><span class="st">"Longueur du Sépale"</span>,<span class="at">ylab=</span><span class="st">"Fréquence"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -365,7 +380,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <p>On représente alors la table de contingence de la classe définie ci-dessus en fonction de l’espèce.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mosaicplot</span>(<span class="fu">table</span>(iris<span class="sc">$</span>Species,iris<span class="sc">$</span>class),<span class="at">color =</span> <span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>,<span class="at">main=</span><span class="st">"répartition des classes en fonction des espèces"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mosaicplot</span>(<span class="fu">table</span>(iris<span class="sc">$</span>Species,iris<span class="sc">$</span>class),</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>           <span class="at">color =</span> <span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>,</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">main=</span><span class="st">"répartition des classes en fonction des espèces"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="672"></p>
 </div>
@@ -379,18 +396,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Télécharger le fichier temperat1.csv sur CONNECT puis ouvrez le dans RStudio (utiliser l’interface graphique), la première colonne correspondra aux noms des lignes du data.frame.</p>
 <p><strong><em>Premier travail :</em></strong> On veut reproduire le graphe suivant :</p>
 <div class="cell">
-<div class="cell-output-display">
-<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<div class="cell">
 <details>
 <summary>Voir la correction</summary>
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(temperat1<span class="sc">$</span>Lat,temperat1<span class="sc">$</span>Lon,<span class="at">type=</span><span class="st">"n"</span>,<span class="at">xlab=</span><span class="st">"Latitude"</span>,<span class="at">ylab=</span><span class="st">"Longitude"</span>,<span class="at">main=</span><span class="st">"Villes en fonction de leur latitude et longitude."</span>)</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(temperat1<span class="sc">$</span>Lat,temperat1<span class="sc">$</span>Lon,<span class="fu">rownames</span>(temperat1))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>temperat1 <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"~/Dropbox/ONIRIS/cours/EC552_IntroR/Cours BM VC/temperat1.csv"</span>, <span class="at">row.names=</span><span class="dv">1</span>, <span class="at">sep=</span><span class="st">";"</span>)</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(temperat1<span class="sc">$</span>Lat,temperat1<span class="sc">$</span>Lon,<span class="at">type=</span><span class="st">"n"</span>,<span class="at">xlab=</span><span class="st">"Latitude"</span>,<span class="at">ylab=</span><span class="st">"Longitude"</span>,<span class="at">main=</span><span class="st">"Villes en fonction de leur latitude et longitude."</span>)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(temperat1<span class="sc">$</span>Lat,temperat1<span class="sc">$</span>Lon,<span class="fu">rownames</span>(temperat1))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
+<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <p><strong><em>aide :</em></strong> pour ne pas avoir de points sur le graphe on utilise type=“n” et on utilise la fonction text() [voir l’aide de R].</p>
@@ -406,7 +420,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">"topleft"</span>,<span class="at">legend=</span><span class="fu">c</span>(<span class="st">"Brest"</span>,<span class="st">"Nantes"</span>,<span class="st">"Rennes"</span>),<span class="at">col=</span><span class="dv">2</span><span class="sc">:</span><span class="dv">4</span>,<span class="at">lty=</span><span class="fu">rep</span>(<span class="dv">1</span>,<span class="dv">3</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="672"></p>
+<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <p>Pour mettre les mois en labels sur l’axe des abscisses on utilisera l’argument xaxt=“n” dans plot et ensuite on utilisera la fonction axis() voir l’aide de R. L’argument type=“b” pourra être utilisé dans plot et dans lines pour dessiner les points et les courbes.</p>
@@ -433,25 +447,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h=</span><span class="fu">mean</span>(bordeaux1<span class="sc">$</span>Pluie),<span class="at">col=</span><span class="dv">2</span>,<span class="at">lwd=</span><span class="dv">2</span>,<span class="at">lty=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid" width="672"></p>
+<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <ol start="2" type="1">
 <li>Faire les 3 histogrammes de la variable chaleur en fonction de la qualité du vin dans une même fenêtre graphique. La droite verticale correspond à la moyenne globale.</li>
 </ol>
 <div class="cell">
-<details>
-<summary>Voir la correction</summary>
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>))</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(bordeaux1<span class="sc">$</span>Chaleur[bordeaux1<span class="sc">$</span>Y1<span class="sc">==</span><span class="st">"médiocre"</span>],<span class="at">xlab=</span><span class="st">"Temperature"</span>,<span class="at">ylab=</span><span class="st">"Fréquence"</span>,<span class="at">main=</span><span class="st">"Qualité médiocre"</span>)</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v=</span><span class="fu">mean</span>(bordeaux1<span class="sc">$</span>Chaleur),<span class="at">col=</span><span class="dv">2</span>,<span class="at">lwd=</span><span class="dv">2</span>,<span class="at">lty=</span><span class="dv">2</span>)</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(bordeaux1<span class="sc">$</span>Chaleur[bordeaux1<span class="sc">$</span>Y1<span class="sc">==</span><span class="st">"moyen"</span>],<span class="at">xlab=</span><span class="st">"Temperature"</span>,<span class="at">ylab=</span><span class="st">"Fréquence"</span>,<span class="at">main=</span><span class="st">"Qualité moyen"</span>)</span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v=</span><span class="fu">mean</span>(bordeaux1<span class="sc">$</span>Chaleur),<span class="at">col=</span><span class="dv">2</span>,<span class="at">lwd=</span><span class="dv">2</span>,<span class="at">lty=</span><span class="dv">2</span>)</span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(bordeaux1<span class="sc">$</span>Chaleur[bordeaux1<span class="sc">$</span>Y1<span class="sc">==</span><span class="st">"bon"</span>],<span class="at">xlab=</span><span class="st">"Temperature"</span>,<span class="at">ylab=</span><span class="st">"Fréquence"</span>,<span class="at">main=</span><span class="st">"Qualité bon"</span>)</span>
-<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v=</span><span class="fu">mean</span>(bordeaux1<span class="sc">$</span>Chaleur),<span class="at">col=</span><span class="dv">2</span>,<span class="at">lwd=</span><span class="dv">2</span>,<span class="at">lty=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co">#| code-fold: true</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| code-summary: "Voir la correction"</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>))</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(bordeaux1<span class="sc">$</span>Chaleur[bordeaux1<span class="sc">$</span>Y1<span class="sc">==</span><span class="st">"médiocre"</span>],<span class="at">xlab=</span><span class="st">"Temperature"</span>,<span class="at">ylab=</span><span class="st">"Fréquence"</span>,<span class="at">main=</span><span class="st">"Qualité médiocre"</span>)</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v=</span><span class="fu">mean</span>(bordeaux1<span class="sc">$</span>Chaleur),<span class="at">col=</span><span class="dv">2</span>,<span class="at">lwd=</span><span class="dv">2</span>,<span class="at">lty=</span><span class="dv">2</span>)</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(bordeaux1<span class="sc">$</span>Chaleur[bordeaux1<span class="sc">$</span>Y1<span class="sc">==</span><span class="st">"moyen"</span>],<span class="at">xlab=</span><span class="st">"Temperature"</span>,<span class="at">ylab=</span><span class="st">"Fréquence"</span>,<span class="at">main=</span><span class="st">"Qualité moyen"</span>)</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v=</span><span class="fu">mean</span>(bordeaux1<span class="sc">$</span>Chaleur),<span class="at">col=</span><span class="dv">2</span>,<span class="at">lwd=</span><span class="dv">2</span>,<span class="at">lty=</span><span class="dv">2</span>)</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(bordeaux1<span class="sc">$</span>Chaleur[bordeaux1<span class="sc">$</span>Y1<span class="sc">==</span><span class="st">"bon"</span>],<span class="at">xlab=</span><span class="st">"Temperature"</span>,<span class="at">ylab=</span><span class="st">"Fréquence"</span>,<span class="at">main=</span><span class="st">"Qualité bon"</span>)</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v=</span><span class="fu">mean</span>(bordeaux1<span class="sc">$</span>Chaleur),<span class="at">col=</span><span class="dv">2</span>,<span class="at">lwd=</span><span class="dv">2</span>,<span class="at">lty=</span><span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid" width="672"></p>
+<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <ol start="3" type="1">
@@ -470,7 +484,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mosaicplot</span>(<span class="fu">table</span>(bordeaux1<span class="sc">$</span>Y1,bordeaux1<span class="sc">$</span>pluie_quali),<span class="at">col=</span><span class="dv">3</span><span class="sc">:</span><span class="dv">2</span>,<span class="at">main=</span><span class="st">"Répartition de la qualité en fonction de la quantité de pluie"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid" width="672"></p>
+<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <ol start="4" type="1">
@@ -486,7 +500,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(bordeaux1<span class="sc">$</span>Temperature,bordeaux1<span class="sc">$</span>Pluie,<span class="fu">rownames</span>(bordeaux1),<span class="at">col=</span>bordeaux1<span class="sc">$</span>Y,<span class="at">cex=</span>.<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
-<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-20-1.png" class="img-fluid" width="672"></p>
+<p><img src="4-5_graphiques_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 
