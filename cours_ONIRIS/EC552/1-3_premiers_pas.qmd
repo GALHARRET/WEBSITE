@@ -4,6 +4,8 @@ author: "Galharret, J.-M."
 title-block-banner: true
 format: html
 editor: visual
+execute:
+  eval: false
 ---
 
 # Présentation rapide de R
@@ -38,7 +40,7 @@ Bref historique :
 
 De très nombreux packages ont été développés pour R, ils permettent d'ajouter de nouvelles fonctionnalités. Pour installer un package on va dans Tools -\> Install Packages
 
-![Installer un package](TD1_files/fig0.png)
+![Installer un package](TD1_files/fig0.png){height="200"}
 
 Par exemple (ne le faites pas ) on installe le package equivalence, ce qui est très important c'est qu'il faut demander à R installer toutes les dépendances du package. Ensuite il faut absolument charger le package dans le script pour pouvoir l'utiliser.
 
@@ -46,11 +48,15 @@ Par exemple (ne le faites pas ) on installe le package equivalence, ce qui est t
 library(equivalence)
 ```
 
+# Installer R et RStudio
+
+Les deux logiciels sont disponiles à l'adresse <https://posit.co/download/rstudio-desktop/> et peuvent s'installer sur Windows, Mac ou Linux.
+
 # Premières commandes
 
 Dans la console exécuter les lignes suivantes :
 
-```{r}
+```{r echo=TRUE}
 1 + 1
 pi
 sin(0)
@@ -99,7 +105,7 @@ mode(x)
 -   toutes les valeurs de même type (nombre, chaine de caractères, booléen)
 -   création via la fonction c() \[combine\].
 
-```{r}
+```{r echo=TRUE}
 a1<-c(1.5,2,3.2,-1.5,0,-1)
 a2<-c("fille","garçon","fille","fille","fille","fille")
 a3<-c(TRUE,FALSE,TRUE,TRUE)
@@ -107,7 +113,7 @@ a3<-c(TRUE,FALSE,TRUE,TRUE)
 
 On peut déterminer la nature du vecteur en utilisant class() :
 
-```{r}
+```{r echo=TRUE}
 class(a1)
 class(a2)
 class(a3)
@@ -119,7 +125,7 @@ class(a3)
 
 2)  Quelle est la classe du résultat ?
 
-```{r eval=F}
+```{r}
 #| code-fold: true
 #| code-summary: "Voir la correction"
 a<-c(a1,a2)
@@ -195,7 +201,7 @@ Toutes les fonctions prédéfinies dans R possèdent une vignette (description d
 
 ***Exemple : Décrire la fonction sample***
 
-```{r}
+```{r echo=TRUE}
 ?sample
 ```
 
@@ -208,7 +214,7 @@ Parmi les arguments, certains sont obligatoires
 
 d'autres sont facultatifs (ils ont des valeurs par défaut) ici replace et prob.
 
-```{r}
+```{r echo=TRUE}
 sample(-10:10,1)
 sample(-10:10,3)
 ```
@@ -221,20 +227,20 @@ sample(-10:10,3)
 
 On définit un vecteur
 
-```{r}
+```{r echo=TRUE}
 set.seed("44")
 x=sample(-20:20,40,T)
 ```
 
 On veut savoir combien de valeurs de x sont postives.
 
-```{r}
+```{r echo=TRUE}
 sum(x>0)
 ```
 
-Quels sont les positions de ces valeurs ?
+Quelless sont les positions de ces valeurs ?
 
-```{r}
+```{r echo=TRUE}
 which(x>0)
 ```
 
@@ -254,31 +260,190 @@ which(x>=5 & x<=10)
 
 ### Exo 1 :
 
-1.  Créer le vecteur x=c("lannister", "targaryen", "baratheon", "starck","greyjoy")
+1.  Créer le vecteur x contenant le nom des villes suivantes Nantes, Brest, Rennes, Angers, Le Mans
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+ x<-c("Nantes", "Brest", "Rennes", "Angers","Le Mans")
+```
 
 2.  Afficher le premier élément de x
 
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+x[1]
+```
+
 3.  Afficher tous les éléments de x sauf le premier
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+x[-1]
+```
 
 4.  Afficher les trois premiers éléments de x.
 
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+x[1:3]
+```
+
 5.  Afficher le deuxième et le quatrième élément de x.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+x[c(2,4)]
+```
 
 6.  Classer les éléments de x dans l'ordre alphabétique puis anti-alphabétique grâce aux fonctions sort et rev.
 
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+sort(x)
+rev(sort(x))
+```
+
 ### Exo 2 :
 
-1.  Créer un vecteur y contenant les entiers pairs de inférieurs à 100 grâce à la fonction seq.
+1.  Créer un vecteur $y$ contenant les entiers pairs inférieurs à 100 grâce à la fonction seq.
 
-2.  Ajouter à y les entiers impairs inférieurs à 100. Vérifier que l'ajout s'est fait correctement.
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+y<-seq(2,100,by=2)
+```
 
-3.  A l'aide de la fonction length déterminer la taille du vecteur y final.
+2.  Ajouter à y les entiers impairs inférieurs à 100. On stockera la valeur obtenue dans une variable $S$.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+z<-seq(1,100,2)
+S<-y+z
+```
+
+3.  Déterminer la taille du vecteur $S$ final.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+length(x)
+```
 
 4.  A l'aide de la fonction rep créer un vecteur sonnette contenant 4 fois « ding » puis 4 fois « dong ».
 
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+sonette<-c(rep("ding",4),rep("dong",4))
+```
+
 5.  A l'aide de la fonction sample créer un vecteur melodie contenant une succession aléatoire de « ding » et de « dong » de taille 100.
 
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+melodie<-sample(c("ding","dong"),100,replace=T)
+```
+
 6.  Grâce à la fonction table, déterminer combien il y a de « ding » et combien il y a de « dong » dans melodie.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+table(melodie)
+```
+
+### Exo 3 :
+
+1.  Générer un vecteur $x$ de taille 100 de valeurs tirées selon une loi normale centrée réduite (ie de paramètre 0 et 1) grâce à la fonction ***rnorm***.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+x<-rnorm(100)
+```
+
+2.  Calculer la somme et la moyenne de x à l'aide des fonctions dédiées.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+sum(x)
+mean(x)
+```
+
+3.  Calculer le minimum, le premier quartile, la médiane, le troisième quartile et le maximum de $x$. La fonction quantile bien utilisée vous donnera toutes ces informations directement...
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+
+quantile(x)
+```
+
+4.  Générer le vecteur booléen indiquant si les nombres contenus dans $x$ sont positifs (TRUE) ou non (FALSE).
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+y<-(x>0)
+```
+
+5.  Même question pour indiquer les nombres sont compris entre -1 et 1.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+(x< -1)|(x>1)
+```
+
+6.  Afficher les indices des valeurs négatives de x.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+which(x<0)
+```
+
+7.  Afficher la valeur absolue de $x$.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+abs(x)
+```
+
+8.  Afficher la partie entière des valeurs de x.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+floor(x)
+```
+
+9.  Afficher uniquement les valeurs positives de x.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+x[x>0]
+```
+
+10. Remplacer les valeurs négatives de x par 0. Vérifier le remplacement.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+x[x>0]<-0
+x
+```
 
 # Les matrices
 
@@ -286,7 +451,7 @@ Les matrices sont comme en mathématiques des tableaux de données. Attention co
 
 ## Définition et fonctions de base
 
-```{r}
+```{r echo=TRUE}
 A=matrix(c(1,2,3,
            2,1,-1,
            -3,-1,1),nrow=3)
@@ -294,7 +459,7 @@ A=matrix(c(1,2,3,
 
 Quelques fonctions utiles la dimension de la matrice
 
-```{r}
+```{r echo=TRUE}
 dim(A)
 ```
 
@@ -304,13 +469,91 @@ Le résultat est donc un vecteur ayant deux éléments le nombre de ligne et le 
 
 Les éléments d'une matrice sont identifiés par un numéro de ligne et de colonne entre crochets A\[i,j\]
 
-```{r}
+```{r echo=TRUE}
 A[1,2]
 # première ligne de A 
 A[1,]
 # première colonne de A
 A[,1]
 ```
+
+## Exercice :
+
+1.  Générer un vecteur fillmat contenant 250 valeurs tirées selon une loi uniforme continue de paramètres 0 et 10 grâce à la fonction ***runif***.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+fillmat<-runif(250,0,10)
+```
+
+2.  Créer une matrice Mesures de 50 lignes et 5 colonnes contenantes les valeurs de fillmat. Les colonnes seront nommées Mesure1,..., Mesure5.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+Mesures<-matrix(fillmat,nrow=50)
+colnames(Mesures)<-paste("Mesure",1:5,sep="")
+```
+
+3.  Créer un vecteur Groupe de taille 50 contenant des valeurs entières entre 1 et 5 (fonction ***sample***). On interprétera Groupe comme le groupe d'appartenance des 50 lignes de Mesures. Ajouter cette colonne à la matrice Mesures (fonction ***cbond***).
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+Groupe<-sample(1:5,50,replace=T)
+Mesures<-cbind(Mesures,Groupe)
+```
+
+4.  Combien de lignes appartiennent au groupe n°2 ?
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+sum(Groupe==2)
+```
+
+5.  Afficher le numéro des lignes appartenant au groupe n°2.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+which(Groupe==2)
+```
+
+6.  Afficher les lignes de Mesures correspondant au groupe n°2.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+Mesures[Groupe==2,]
+```
+
+7.  Déterminer combien Mesures contient de valeurs inférieures à 5 (on exclura la colonne groupe du comptage).
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+sum(Mesures[,-6]<5)
+```
+
+8.  Calculer la moyenne des valeurs de Mesures correspondant au groupe n°4.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+mean(Mesures[Groupe==4,1:5])
+```
+
+9.  Même question mais pour les 3 premières colonnes uniquement.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Voir la correction"
+mean(Mesures[Groupe==4,1:3])
+```
+
+10. Appliquer à Mesures les fonctions dim, ncol et nrow. A quoi correspondent ces nombres ?
 
 # Les data frames
 
@@ -320,7 +563,7 @@ C'est l'objet le plus important et le plus utilisé dans R il s'agit d'un tablea
 
 On crée deux variables x et y contenant $n=100$ nombres distribués selon une loi uniforme continue sur \[0,20\] (fonction runif) et une variable gr (expliquer le résultat du code correspondant). La fonction ***round*** permet d'arrondir.
 
-```{r}
+```{r echo=TRUE}
 x<-round(runif(100,0,20),1)
 y<-round(runif(100,0,20),1)
 gr<-sample(c("ING1","ING2"),size=100,replace=T,prob=c(0.6,0.4))
@@ -329,13 +572,13 @@ df<-data.frame(NoteF=x,NoteM=y,gr=gr)
 
 L'indexation des éléments dans un data-frame est la même que dans une matrice :
 
-```{r eval=F}
+```{r echo=TRUE}
 df[1,1]
 ```
 
 On peut également sélectionner une colonne du data frame via \$
 
-```{r eval=F}
+```{r echo=TRUE}
 df$NoteF
 ```
 
@@ -345,7 +588,7 @@ df$NoteF
 
 Cette fonction permet de résumer l'ensemble des variables du data frame.
 
-```{r}
+```{r echo=TRUE}
 summary(df)
 ```
 
@@ -353,7 +596,7 @@ summary(df)
 
 La fonction apply permet d'appliquer une fonction sur les lignes (1) ou les colonnes d'un data frame : par exemple si on souhaite appliquer la fonction moyenne (***mean***) sur les colonnes du data frame df on utilise :
 
-```{r}
+```{r echo=TRUE}
 apply(df[,1:2],2,mean)
 ```
 
@@ -363,25 +606,70 @@ Remarque : on n'a utilisé que les deux premières colonnes du data frame car la
 
 Pour accéder aux data frames de R :
 
-```{r}
+```{r echo=TRUE}
 data()
 ```
 
 ensuite on peut grâce à la fonction help obtenir de l'aide sur l'un des data frame :
 
-```{r}
+```{r echo=TRUE}
 help("mtcars")
 ```
 
 Ensuite on charge le jeu de données via
 
-```{r}
+```{r echo=TRUE}
 data("mtcars")
 ```
 
 Une fois le data frame importé on constate qu'il est présent dans la fenêtre environnement
 
 ![Fenêtre environnement](TD1_files/fig2.png)
+
+### La fonction factor()
+
+Cette fonction va être très importante pour la suite et en particulier lorsque l'on va manipuler des jeux de donnnées en statistique.
+
+Un ***facteur*** est une variable qualitative. Les valeurs prises par cette variable sont appelées ***modalités***. Il peut arriver que ces modalités soient codées. Par exemple dans certains jeux de données on connaîtra le statut professionnel des participants (modalités : en activité, en recherche d'emploi, étudiant, à la retraite) mais on peut avoir choisi de coder les modalités par des nombres (ici de 1 à 4) mais cette variable demeure un facteur.
+
+Dans R :
+
+```{r echo=T,eval=T}
+statut_pro<-sample(1:4,100,replace=T)
+## R ne voit pas qu'il s'agit d'un facteur car les modalités sont numériques
+class(statut_pro)
+table(statut_pro)
+```
+
+On utilise la fonction factor pour dire à R qu'il s'agit d'une variable qualitative. On voit le changement à travers class ou levels :
+
+```{r echo=T,eval=T}
+statut_pro<-factor(statut_pro)
+class(statut_pro)
+levels(statut_pro)
+levels(statut_pro)<-c("en activité", "en recherche d'emploi",
+                      "étudiant", "à la retraite")
+table(statut_pro)
+```
+
+***Remarque :*** Les variables binaires (facteurs à deux modalités) sont souvent codées 0/1.
+
+On peut être amené à vouloir avoir les modalités d'un facteur classées dans un certain ordre pour ce faire on va utiliser la fonction labels avec l'ordre choisi :
+
+```{r echo=T, eval=T}
+statut_pro<-factor(statut_pro,labels=c("étudiants","en activité",
+                                       "en recherche d'emploi","à la retraite"))
+table(statut_pro)
+```
+
+***Attention*** les labels doivent être exactement écrits de la même façon que les levels si les modalités sont déjà écrites et sinon on peut directement agir sur les modalités via labels :
+
+```{r echo=T}
+data("mtcars")
+help("mtcars")
+mtcars$vs<-factor(mtcars$vs,levels=0:1,labels=c("V-shaped","straight"))
+mtcars$am<-factor(mtcars$am,levels=0:1,labels=c("automatic","manual"))
+```
 
 ## Importation d'une base de données externe
 
@@ -397,11 +685,11 @@ On va importer le data frame contenu dans le fichier bordeaux.csv disponible sur
 
 Vous avez deux solutions : ***From text (base)***
 
-![Importation avec la librairie base](TD1_files/fig4-0.png)
+![Importation avec la librairie base](TD1_files/fig4-0.png){width="100%"}
 
 ***From text (readr)***
 
-![Importation avec la librairie readr](TD1_files/fig4.png)
+![Importation avec la librairie readr](TD1_files/fig4.png){width="100%"}
 
 Ensuite il est recommandé de copier/coller la ligne de commande dans le script R afin de pas à avoir à reproduire la manipulation à chaque session de travail sur le fichier bordeaux.csv
 
@@ -496,7 +784,7 @@ levels(iris$groupe)=c("A","B","C")
 which(iris$groupe=="B")
 ```
 
-11. Créer I l'ensemble des numéros de lignes correspondantes aux fleurs du groupe A. A l'aide de I afficher les lignes de iris correspondant au groupe A. Proposer une solution alternative.
+11. Créer l'ensemble des numéros de lignes correspondantes aux fleurs du groupe A. Afficher les lignes de iris correspondant au groupe A. Proposer une solution alternative.
 
 ```{r eval=F}
 #| code-fold: true
@@ -576,12 +864,4 @@ apply(mtcars[,1:7],2,mean)
 #| code-summary: "Voir la correction"
 apply(mtcars[mtcars$vs=="V",1:7],2,mean)
 apply(mtcars[mtcars$vs=="droit" & mtcars$am=="Auto",1:7],2,mean)
-```
-
-7.  Calculer le nombre de voitures ayant un moteur en V qui ont au moins 3 carburateurs.
-
-```{r eval=F}
-#| code-fold: true
-#| code-summary: "Voir la correction"
-sum(mtcars$vs=="V" & mtcars$carb>=3)
 ```
