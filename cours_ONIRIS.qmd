@@ -4,15 +4,34 @@ title: "cours ONIRIS"
 
 ## Cours Ing1
 
+### EC551 Statistique descriptive
+
+1.  [Diaporama du Cours](cours_ONIRIS/EC551/cours.pdf)
+
+2.  [TD1](cours_ONIRIS/EC551/TD1.pdf)
+
+3.  [TD2](cours_ONIRIS/EC551/TD2.pdf)
+
+4.  [TD3](cours_ONIRIS/EC551/TD3.pdf)
+
 ### EC552 Intro à R
 
-1.  [Prise en main de R (Séances 1 à 3)](cours_ONIRIS/EC552/1-3_premiers_pas.html)
+1.  [Prise en main de R (Séances 1 à 3) avec correction ](cours_ONIRIS/EC552/1-3_premiers_pas_correct.pdf)
 
-2.  [Graphiques dans R (Séances 4 et 5)](cours_ONIRIS/EC552/4-5_graphiques.html)
 
-3. [Programmer dans R (Séances 6 et 7)](cours_ONIRIS/EC552/6-7_programmer_R.html)
+2.  [Graphiques dans R (Séances 4 et 5) avec correction ](cours_ONIRIS/EC552/4-5_graphiques_correct.pdf)
+
+3.  [Programmer dans R (Séances 6 et 7) avec correction](cours_ONIRIS/EC552/6-7_programmer_R_correct.pdf)
 
 ### EC503 Algorithmique et programmation
+
+1.  [Découverte de R (Séances 1 à 3) avec correction](cours_ONIRIS/EC503/TD1-3_correct.pdf)
+
+2. [Matrices et data frame (Séances 4 à 6)](cours_ONIRIS/EC503/TD4-6.pdf)
+
+3. [Graphiques dans R (Séances 7 à 10)](cours_ONIRIS/EC503/TD7-10.pdf)
+
+4. [Conditions, boucles, fonctions dans R (Séances 11 à 16)](cours_ONIRIS/EC503/TD11-16.pdf)
 
 ## Cours Ing2
 
