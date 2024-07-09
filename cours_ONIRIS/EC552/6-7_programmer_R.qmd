@@ -27,20 +27,19 @@ if(x>0){
   print(paste("La valeur",round(x,1),"est négative",sep=" "))}
 ```
 
+On peut imbriquer plusieurs conditions if.
 
-On peut imbriquer plusieurs conditions if. 
+***Rappel :***
 
-***Rappel :*** 
+1.  l'opérateur \| correspond à OU : A \| B est faux lorsque les deux événements A et B sont faux simultanément.
 
-1. l'opérateur | correspond à OU : A | B est faux lorsque les deux événements A et B sont faux simultanément.
+2.  l'opérateur & correspond à ET : A & B est vrai uniquement lorsque les deux événements A et B sont vrais.
 
-2. l'opérateur & correspond à ET : A & B est vrai uniquement lorsque les deux événements A et B sont vrais.
+***Exercice :***
 
-***Exercice :*** 
-
-1. Choisir deux nombres $x,y$ au hasard dans l'intervalle $[0,10]$ 
-2. La valeur stockée dans la variable $z$ sera égale à $x+1$ si $x<y$ sinon égale à $x+2$ si $x>5$ et $y>5$ sinon égale à $x$.
-3. Retourner les valeurs de x,y,z. On pourra utiliser la fonction paste(). 
+1.  Choisir deux nombres $x,y$ au hasard dans l'intervalle $[0,10]$
+2.  La valeur stockée dans la variable $z$ sera égale à $x+1$ si $x<y$ sinon égale à $x+2$ si $x>5$ et $y>5$ sinon égale à $x$.
+3.  Retourner les valeurs de x,y,z. On pourra utiliser la fonction paste().
 
 ```{r}
 #| code-fold: true
@@ -50,8 +49,6 @@ y<-runif(1,0,10)
 if(x<y){z<-x+1}else if(x>5 & y>5){z<-x+2}else{z<-x} 
 print(paste("x=",x,"y=",y,"z=",z))
 ```
-
-
 
 # Boucle FOR, WHILE :
 
@@ -68,7 +65,7 @@ for(i in 1:n){x<-x+i}
 print(x)
 ```
 
-Mais on peut aussi faire la somme de tous les entiers impairs compris entre 1 et n 
+Mais on peut aussi faire la somme de tous les entiers impairs compris entre 1 et n
 
 ```{r}
 n<-100
@@ -78,13 +75,9 @@ for(i in impairs){x<-x+i}
 print(x)
 ```
 
-***Exercice :***
-On considère deux variables $x,y$ initialisées à 0.
-On propose le jeu suivant : 
-"à chaque itération on tire un nombre au hasard entre 0 et 1, lorsque ce nombre est supérieur à 0.5 on incrémente la valeur précédente de $y$ de 1, sinon c'est la valeur précédente de $z$ qui est incrémentée de 1."
+***Exercice :*** On considère deux variables $x,y$ initialisées à 0. On propose le jeu suivant : "à chaque itération on tire un nombre au hasard entre 0 et 1, lorsque ce nombre est supérieur à 0.5 on incrémente la valeur précédente de $y$ de 1, sinon c'est la valeur précédente de $z$ qui est incrémentée de 1."
 
-Le joueur gagne si au bout de $n$ itérations $y>z.$
-Ecrire le programme pour $n=10.$
+Le joueur gagne si au bout de $n$ itérations $y>z.$ Ecrire le programme pour $n=10.$
 
 ```{r}
 #| code-fold: true
@@ -98,10 +91,9 @@ if(x>0.5){y<-y+1}else{z<-z+1}
 if(y>z){print("Gagnant")}else{print("Perdant")}
 ```
 
-
 ## WHILE
 
-***while(condition){instruction}*** répète une instruction tant que la condition considérée est vraie. Attention, la condition est évaluée avant toute exécution dans while. 
+***while(condition){instruction}*** répète une instruction tant que la condition considérée est vraie. Attention, la condition est évaluée avant toute exécution dans while.
 
 ```{r echo=T}
 i<-1
@@ -110,18 +102,23 @@ while (i<10){
    i=i+1}
 ```
 
-
 ***Exercice***
 
-1.	Créer un vecteur nommé vecAlea de 100 valeurs entières entre 1 et 100. On utilisera la fonction ***sample*** avec remise.
+1.  Créer un vecteur nommé vecAlea de 100 valeurs entières entre 1 et 100. On utilisera la fonction ***sample*** avec remise.
 
-a.	déterminer le vecteur IND qui contient les indices des valeurs strictement supérieures à 50, (avec une boucle et sans une boucle)
+```{=html}
+<!-- -->
+```
+a.  déterminer le vecteur IND qui contient les indices des valeurs strictement supérieures à 50, (avec une boucle et sans une boucle)
 
-b.	déterminer le vecteur VEC contenant ces valeurs.
+b.  déterminer le vecteur VEC contenant ces valeurs.
 
-2.	On calcule le maximum du vecteur vecAlea. Déterminer à l'aide d'une boucle le nombre de fois où ce maximum apparaît dans vecAlea. Retrouver ce nombre sans utiliser de boucle.
+```{=html}
+<!-- -->
+```
+2.  On calcule le maximum du vecteur vecAlea. Déterminer à l'aide d'une boucle le nombre de fois où ce maximum apparaît dans vecAlea. Retrouver ce nombre sans utiliser de boucle.
 
-3.	Créer le vecteur nommé vecPM5 contenant tous les nombres de 1 à 100 qui ne sont pas des multiples de 5 (avec une boucle puis sans). Penser à la fonction ***floor*** qui calcule la partie entière. 
+3.  Créer le vecteur nommé vecPM5 contenant tous les nombres de 1 à 100 qui ne sont pas des multiples de 5 (avec une boucle puis sans). Penser à la fonction ***floor*** qui calcule la partie entière.
 
 ```{r}
 #| code-fold: true
@@ -159,7 +156,6 @@ while(i<=100){
 }
 ```
 
-
 # Ecrire une fonction en R :
 
 On veut écrire une fonction qui étant donnée le rayon $r$ d'un cercle permet de calculer son périmètre $P=2\pi r$, on note cette fonction perim()
@@ -171,12 +167,11 @@ perim<-function(r){
 perim(1)
 ```
 
-On remarque que dans le langage R il n'est pas nécessaire de donner le type des arguments (entier, carcatère,...) la fonction s'appliquera sauf si le type n'est pas correct 
+On remarque que dans le langage R il n'est pas nécessaire de donner le type des arguments (entier, carcatère,...) la fonction s'appliquera sauf si le type n'est pas correct
 
 ```{r echo=T,eval=F}
 perim("rayon")
 ```
-
 
 On peut améliorer cette fonction en indiquant à l'utilisateur que la fonction ne sera calculée que lorsque $r>0$ :
 
@@ -188,11 +183,9 @@ perim(1)
 perim(-1)
 ```
 
-Par contre l'erreur reste identique si on applique la fonction périmètre à "rayon".
-On peut également définir des fonctions qui ont plusieurs arguments en entrée et qui peuvent retourner plusieurs valeurs en sortie.
+Par contre l'erreur reste identique si on applique la fonction périmètre à "rayon". On peut également définir des fonctions qui ont plusieurs arguments en entrée et qui peuvent retourner plusieurs valeurs en sortie.
 
-Autre Exemple :
-On va écrire une fonction restangle() ayant pour arguments L et l qui renvoie le périmètre $P=2\times(L+l)$ et l'aire $A=L\times l$ du rectangle.
+Autre Exemple : On va écrire une fonction restangle() ayant pour arguments L et l qui renvoie le périmètre $P=2\times(L+l)$ et l'aire $A=L\times l$ du rectangle.
 
 ```{r echo=T}
 rectangle<-function(L,l){
@@ -204,7 +197,6 @@ rectangle(11,10)
 ## Que le périmètre :
 rectangle(11,10)$Perim
 ```
-
 
 ***Exercice :***
 
@@ -220,15 +212,13 @@ SomEnt<-function(n){
 }
 ```
 
-
-
 # Exercices :
 
 ## Exercice 1 (Droite des moindres carrés)
 
 On va écrire une fonction R qui permet de déterminer la droite des moindres carrées ordinaires. Vous verrez (ultérieurment en stat) que pour un nuage de points $(x_i,y_i)_{i=1,...,n}$ la droite la plus proche (au sens des moindres carées) de ce nuage a pour pente $b=\frac{\frac{1}{n}\sum{x_i y_i}-\bar x\bar y}{\frac{1}{n}\sum x_i^2-\bar x}$ et pour ordonnée à l'origine $a=\bar y -b \bar x.$
 
-Créer une fonction nommée droite() ayant pour arguments deux vecteurs x,y et qui calcule le coefficient directeur de la droite et son ordonnée à l'origine. 
+Créer une fonction nommée droite() ayant pour arguments deux vecteurs x,y et qui calcule le coefficient directeur de la droite et son ordonnée à l'origine.
 
 ```{r eval=T}
 #| code-fold: true
@@ -240,7 +230,6 @@ droite<-function(x,y){
 }
 ```
 
-
 ## Exercice 2 : Boucles et graphiques
 
 Reprendre la base de données iris :
@@ -250,10 +239,9 @@ Reprendre la base de données iris :
 data("iris")
 ```
 
+1.  Utiliser une boucle de manière à faire une boîte à moustaches par variable quantitative `r colnames(iris)[1:4]` selon l'espèce `r colnames(iris)[5]`.
 
-1. Utiliser une boucle de manière à faire une boîte à moustaches par variable quantitative `r colnames(iris)[1:4]` selon l’espèce `r colnames(iris)[5]`.
-
-2. Utiliser une boucle de reproduire le graphique suivant (on pensera à utiliser la fonction ***abline*** pour ajouter la droite des moindres carrés):
+2.  Utiliser une boucle de reproduire le graphique suivant (on pensera à utiliser la fonction ***abline*** pour ajouter la droite des moindres carrés):
 
 ```{r eval=T,fig.height=5,fig.width=10,fig.align='center'}
 #| code-fold: true
@@ -273,4 +261,3 @@ for(i in 1:3){
 
 
 ```
-
