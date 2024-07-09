@@ -37,9 +37,9 @@
   {
     "objectID": "communications.html",
     "href": "communications.html",
-    "title": "Website",
+    "title": "Communications :",
     "section": "",
-    "text": "JDS (Journées de statistique)\nJe participe aux JDS depuis 2018.\n\n2023 : à venir\n2021 : Analyse bayésienne des modèles de médiation et de modération Slides\n2020 : Priors comparison in Bayesian mediation framework with binary outcome Slides\n2019 : Détection bayésienne d’outliers et ses applications en archéologie Slides\n2018 : Modèle de médiation à réponse binaire. Approche non paramétrique pour tester l’effet direct Slides\n\n\n\nENBIS\n\n2021 : Priors comparison in Bayesian mediation framework with binary outcome Slides"
+    "text": "Communications :\n\nDécembre 2023 [AppliBugs (AgroParistech)] : Modèle hiérarchique pour la détection de valeurs aberrantes. Applications à la datation en archéologie. Slides\nJuin 2023 [JDS Bruxelles] : Médiation à variable d’exposition ordinale. Application à l’etude du cumul de discriminations sur l’estime de soi. Slides\nJuin 2023 [MODEVAIA] Trajectoire affective durant le premier confinement dû au COVID 19 : Modèles en courbe de croissance et changement de trajectoire affective. Modélisation des liens entre les affects et les stratégies de régulations émotionnelles. https://galharret.github.io/MODEVAIIA/\nJuin 2021 [JDS Nice] : Analyse bayésienne des modèles de médiation et de modération Slides\nSeptembre 2021 [ENBIS 2021] : Priors comparison in Bayesian mediation framework with binary outcome Slides\nJuin 2019 [JDS Nancy] : Détection bayésienne d’outliers et ses applications en archéologie Slides\nJuin 2018 [JDS Paris Saclay] : Modèle de médiation à réponse binaire. Approche non paramétrique pour tester l’effet direct Slides\n\n\n\nWorkshop\n\nFévrier 2024 [Chimiométrie 2024] : Equations structurelles et leurs applications https://galharret.github.io/SEM/"
   },
   {
     "objectID": "cours_ONIRIS.html",

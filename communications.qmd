@@ -1,17 +1,20 @@
-# JDS (Journées de statistique)
+# Communications :
 
-Je participe aux JDS depuis 2018.
+- Décembre 2023 [AppliBugs (AgroParistech)] : Modèle hiérarchique pour la détection de valeurs aberrantes. Applications à la datation en archéologie. [Slides](communications/APPLIBUGS2023.pdf)
 
-* 2023 : à venir
+- Juin 2023 [JDS Bruxelles] : Médiation à variable d'exposition ordinale. Application à l'etude du cumul de discriminations sur l'estime de soi. [Slides](communications/JDS2023.pdf) 
 
-* 2021 : Analyse bayésienne des modèles de médiation et de modération [Slides](communications/JDS2021.pdf)
+- Juin 2023 [MODEVAIA] Trajectoire affective durant le premier confinement dû au COVID 19 : Modèles en courbe de croissance et changement de trajectoire affective. Modélisation des liens entre les affects et les stratégies de régulations émotionnelles. [https://galharret.github.io/MODEVAIIA/](https://galharret.github.io/MODEVAIIA/)
 
-* 2020 : Priors comparison in Bayesian mediation framework with binary outcome [Slides](communications/ENBIS21.pdf)
+- Juin 2021 [JDS Nice] : Analyse bayésienne des modèles de médiation et de modération [Slides](communications/JDS2021.pdf)
 
-* 2019 : Détection bayésienne d'outliers et ses applications en archéologie [Slides](communications/JDS2019.pdf)
+- Septembre 2021 [ENBIS 2021] : Priors comparison in Bayesian mediation framework with binary outcome [Slides](communications/ENBIS21.pdf)
 
-* 2018 : Modèle de médiation à réponse binaire. Approche non paramétrique pour tester l'effet direct [Slides](communications/JDS2018.pdf)
+- Juin 2019 [JDS Nancy] : Détection bayésienne d'outliers et ses applications en archéologie [Slides](communications/JDS2019.pdf)
 
-# ENBIS
+-   Juin 2018 [JDS Paris Saclay] : Modèle de médiation à réponse binaire. Approche non paramétrique pour tester l'effet direct [Slides](communications/JDS2018.pdf)
 
-* 2021 : Priors comparison in Bayesian mediation framework with binary outcome [Slides](communications/ENBIS21.pdf)
+# Workshop
+
+-   Février 2024 [Chimiométrie 2024] : Equations structurelles et leurs applications
+[https://galharret.github.io/SEM/](https://galharret.github.io/SEM/)
