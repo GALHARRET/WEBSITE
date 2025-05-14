@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.45">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,10 +35,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4968d28af72d4e5a34172c9bc5ef961b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -130,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
@@ -138,9 +138,10 @@ ul.task-list li input[type="checkbox"] {
 <section id="communications" class="level1">
 <h1>Communications :</h1>
 <ul>
+<li><p>Juin 2025 : [JDS Marseille] : Modélisation de l’évolution de la présence d’une infection par un modèle bayésien de Markov caché à observations continues. Application à la surveillance de la BVD en France. <a href="communications/JDS2025.pdf">Résumé Long</a></p></li>
 <li><p>Décembre 2023 [AppliBugs (AgroParistech)] : Modèle hiérarchique pour la détection de valeurs aberrantes. Applications à la datation en archéologie. <a href="communications/APPLIBUGS2023.pdf">Slides</a></p></li>
 <li><p>Juin 2023 [JDS Bruxelles] : Médiation à variable d’exposition ordinale. Application à l’etude du cumul de discriminations sur l’estime de soi. <a href="communications/JDS2023.pdf">Slides</a></p></li>
-<li><p>Juin 2023 [MODEVAIA] Trajectoire affective durant le premier confinement dû au COVID 19 : Modèles en courbe de croissance et changement de trajectoire affective. Modélisation des liens entre les affects et les stratégies de régulations émotionnelles. <a href="https://galharret.github.io/MODEVAIIA/">https://galharret.github.io/MODEVAIIA/</a></p></li>
+<li><p>Juin 2023 [MODEVAIA] Trajectoire affective durant le premier confinement dû au COVID 19 : Modèles en courbe de croissance et changement de trajectoire affective. Modélisation des liens entre les affects et les stratégies de régulations émotionnelles. <a href="https://galharret.github.io/MODEVAIIA/" class="uri">https://galharret.github.io/MODEVAIIA/</a></p></li>
 <li><p>Juin 2021 [JDS Nice] : Analyse bayésienne des modèles de médiation et de modération <a href="communications/JDS2021.pdf">Slides</a></p></li>
 <li><p>Septembre 2021 [ENBIS 2021] : Priors comparison in Bayesian mediation framework with binary outcome <a href="communications/ENBIS21.pdf">Slides</a></p></li>
 <li><p>Juin 2019 [JDS Nancy] : Détection bayésienne d’outliers et ses applications en archéologie <a href="communications/JDS2019.pdf">Slides</a></p></li>
@@ -150,7 +151,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="workshop" class="level1">
 <h1>Workshop</h1>
 <ul>
-<li>Février 2024 [Chimiométrie 2024] : Equations structurelles et leurs applications <a href="https://galharret.github.io/SEM/">https://galharret.github.io/SEM/</a></li>
+<li><p>Février 2024 [Chimiométrie 2024] : Equations structurelles et leurs applications. <a href="https://galharret.github.io/SEM/" class="uri">https://galharret.github.io/SEM/</a></p></li>
+<li><p>Septembre 2024 [Agrostat 2024 ] : Structural Equation Modeling. <a href="https://galharret.github.io/SEM_AGROSTAT2024/" class="uri">https://galharret.github.io/SEM_AGROSTAT2024/</a></p></li>
 </ul>
 
 
@@ -239,8 +241,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -351,7 +351,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
