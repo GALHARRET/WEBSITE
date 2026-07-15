@@ -2,17 +2,31 @@
 title: "Publications"
 ---
 
+# 2026
+
+- Manuel Hefti, Jean-Michel Galharret, Oscar Navarro, Ghozlane Fleury-Bahi,
+Perceived naturalness and restorative responses in virtual urban environments: Evidence from two immersive VR experiments, Acta Psychologica, Volume 269, 2026, [10.1016/j.actpsy.2026.107401](https://doi.org/10.1016/j.actpsy.2026.107401).
+
+- Deledalle, A., Bour, V., Galharret, JM. et al. Academic medicine career intentions among medical residents: a social cognitive career theory approach. BMC Med Educ (2026). [10.1186/s12909-026-09740-4](https://doi.org/10.1186/s12909-026-09740-4).
+
+- Aurélien Madouasse, Matthieu Trotreau, Grégoire Kuntz, Jean-Michel Galharret,
+A Bayesian Hidden Markov Model using continuous longitudinal test data: Evaluation and application to BVD detection in cattle,
+Preventive Veterinary Medicine, Volume 254, 2026, [10.1016/j.prevetmed.2026.106924](https://doi.org/10.1016/j.prevetmed.2026.106924).
+
+- Kindelberger, C., Mallet, P., and Galharret, J.-M., 2026. Development of Dating Motivations During High School: Contributions of Romantic Experiences. Journal of Adolescence0: e70132. [10.1002/jad.70132](https://doi.org/10.1002/jad.70132).
+
+
+
+
 # 2025
 
-- Gilet, AL., Galharret, JM. Age-related differences in a DRM task: affect as a mediator. Motiv Emot (2025). [10.1007/s11031-025-10118-0](https://doi.org/10.1007/s11031-025-10118-0)
+-   Gilet, AL., Galharret, JM. Age-related differences in a DRM task: affect as a mediator. Motiv Emot (2025). [10.1007/s11031-025-10118-0](https://doi.org/10.1007/s11031-025-10118-0)
 
-- H. Farnia, P. Sautejeau-Rizzoni, J.-M. Galharret, M. Le-Guiriec, D. Bencharif, Does the equilibration time prior to freezing affect post-thaw motion characteristics of stallion spermatozoa?, Journal of Equine Veterinary Science, Volume 145, 2025, 105280, ISSN 0737-0806,
-[10.1016/j.jevs.2024.105280](https://doi.org/10.1016/j.jevs.2024.105280).
-
+-   H. Farnia, P. Sautejeau-Rizzoni, J.-M. Galharret, M. Le-Guiriec, D. Bencharif, Does the equilibration time prior to freezing affect post-thaw motion characteristics of stallion spermatozoa?, Journal of Equine Veterinary Science, Volume 145, 2025, 105280, ISSN 0737-0806, [10.1016/j.jevs.2024.105280](https://doi.org/10.1016/j.jevs.2024.105280).
 
 -   Galharret, J.M., Mahieu, B., Ratel, J., Krystalli, K., Pissaridi, K., Vigneau, E., Engel, E., Implementation of sample pooling to strengthen the self-monitoring in the food industry: Case study of mycotoxins in cereals, Food Research International, 2025, 115937, ISSN 0963-9969,[10.1016/j.foodres.2025.115937](https://doi.org/10.1016/j.foodres.2025.115937).
 
-- Molinéro-Demilly, V., Charki, A., Lyonnet, B., Galharret, J.M., Joffrion, C., Effects of quality management on well-being at work and performance in a research laboratory: an exploratory study International. Journal of Quality & Reliability Management.
+-   Molinéro-Demilly, V., Charki, A., Lyonnet, B., Galharret, J.M., Joffrion, C., Effects of quality management on well-being at work and performance in a research laboratory: an exploratory study International. Journal of Quality & Reliability Management. [10.1108/IJQRM-12-2023-0379](https://doi.org/10.1108/IJQRM-12-2023-0379)
 
 # 2024
 
@@ -30,7 +44,7 @@ title: "Publications"
 
 -   G. Dagher, A. Martin, J.M. Galharret, L. Moulin, J.P. Croué, B. Teychene (2023). Forecasting multicycle hollow fiber ultrafiltration fouling using time series analysis, Journal of Water Process Engineering, Volume 56, 2023, 104441, ISSN 2214-7144, [10.1016/j.jwpe.2023.104441](https://doi.org/10.1016/j.jwpe.2023.104441).
 
--   Guinaudeau, C., Galharret, J., Roussiau, N. & Renard, E. (2023). Spiritualité explicite, préférence pour le naturel et croyances à l'efficacité de l'homéopathie. Bulletin de psychologie, , 1b-21b. [10.3917/bupsy.pr1.0002](https://doi.org/10.3917/bupsy.pr1.0002)
+-   Guinaudeau, C., Galharret, J., Roussiau, N. & Renard, E. (2023). Spiritualité explicite, préférence pour le naturel et croyances à l'efficacité de l'homéopathie. Bulletin de psychologie, , 1b-21b. [10.3917/bupsy.581.0179](https://doi.org/10.3917/bupsy.581.0179)
 
 -   Ollivaud, J., Galharret, J.M., & Roussiau, N. (2023). Explicit spirituality, self-esteem and the mechanisms of social and temporal comparison. Spiritual Psychology and Counseling, 8(1), 83--102. [10.37898/spc.2023.8.1.187](https://doi.org/10.37898/spc.2023.8.1.187)
 

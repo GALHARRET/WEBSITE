@@ -2,29 +2,18 @@
 title: "cours ONIRIS"
 ---
 
-# Cours Ingénieur 1ière année
+## Cours Ingénieur 1ière année
 
-## EC551 Statistique descriptive
+-   Statistique descriptive [Diaporama du Cours](cours_ONIRIS/EC551/cours.pdf)
 
-1.  [Diaporama du Cours](cours_ONIRIS/EC551/cours.pdf)
+-   Introduction au language R [Cours + TD](https://galharret.github.io/IntroR/)
 
-2.  [TD1 avec correction](cours_ONIRIS/EC551/TD1_correct.pdf)
+## Cours Ingénieur deuxième année
 
-3.  [TD2 avec correction](cours_ONIRIS/EC551/TD2_correct.pdf)
-
-
-
-## EC552 Intro à R
-
-[Introduction à R](https://galharret.github.io/IntroR/)
-
-# Cours Ingénieur deuxième année 
-
-[Maitrise Statistique des Procédés](https://galharret.github.io/MSP/)
+-   Maitrise Statistique des Procédés [Cours + TD](https://galharret.github.io/MSP/)
 
 ## Cours Ingénieur troisième année
 
-[Tri libre](https://galharret.github.io/TL/)
+-   Tri libre [Cours + TD](https://galharret.github.io/TL/)
 
-[Modèles avancés d'ANOVA](https://galharret.github.io/ANOVA/)
-
+-   Modèles avancés d'ANOVA [Cours + TD](https://galharret.github.io/ANOVA/)

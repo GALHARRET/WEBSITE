@@ -26,7 +26,7 @@ J'ai créé ce cours en 2020, il s'adressait aux étudiants de Licence 2 de psyc
 
 -   Cours 4 : Tests du $\chi^2$ [Télécharger le diaporama](lectures/L2/chapitre4.pdf)
 
--   Cours 5 : Tests non paramétriques basés sur les rangs [Télécharger le diaporama](lectures/L2/chapitre5.pdf)
+-   Cours 5 : Tests non paramétriques basés sur les rangs [Télécharger le diaporama](lectures/L2/chapitre5.pdf). Des capsules vidéo sont disponibles [Partie 1](https://mediaserver.univ-nantes.fr/videos/capsule-3-tests-non-parametriques-partie-1/), [Partie 2](https://mediaserver.univ-nantes.fr/videos/test-np-p2/)
 
 -   TD 1 : Tests de comparaison de deux groupes indépendants [Télécharger le diaporama](lectures/L2/TD1.pdf)
 
@@ -34,7 +34,7 @@ J'ai créé ce cours en 2020, il s'adressait aux étudiants de Licence 2 de psyc
 
 -   TD 3 : Tests de corrélation [Télécharger le diaporama](lectures/L2/TD3.pdf)
 
--   TD 4 : Tests du $\chi^2$ [Télécharger le diaporama](lectures/L2/TD4.pdf)
+-   TD 4 : Tests du $\chi^2$ [Télécharger le diaporama](lectures/L2/TD4.pdf). [Capsule vidéo](https://mediaserver.univ-nantes.fr/videos/test-dindependance-du-khi-deux/)
 
 # Modèles d'ANOVA
 

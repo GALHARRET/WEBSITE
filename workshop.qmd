@@ -1,0 +1,7 @@
+# Workshops
+
+-   Mars 2025 \[ Laboratoire Lorrain de Psychologie et Neurosciences de la dynamique des comportements \] : Statistiques non paramétriques et introduction aux statistiques bayésiennes. <https://galharret.github.io/formation_nancy/>
+
+-   Septembre 2024 \[Agrostat 2024 \] : Structural Equation Modeling. <https://galharret.github.io/SEM_AGROSTAT2024/>
+
+-   Février 2024 \[Chimiométrie 2024\] : Equations structurelles et leurs applications. <https://galharret.github.io/SEM/>
