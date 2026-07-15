@@ -10,6 +10,7 @@ title: "cours ONIRIS"
 
 ## Cours Ingénieur deuxième année
 
+-   Analyse en Composantes Principales [Cours](Lectures/M1/ACP_cours.pdf)
 -   Maitrise Statistique des Procédés [Cours + TD](https://galharret.github.io/MSP/)
 
 ## Cours Ingénieur troisième année

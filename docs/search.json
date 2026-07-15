@@ -46,7 +46,7 @@
     "href": "cours_ONIRIS.html",
     "title": "cours ONIRIS",
     "section": "",
-    "text": "Cours Ingénieur 1ière année\n\nStatistique descriptive Diaporama du Cours\nIntroduction au language R Cours + TD\n\n\n\nCours Ingénieur deuxième année\n\nMaitrise Statistique des Procédés Cours + TD\n\n\n\nCours Ingénieur troisième année\n\nTri libre Cours + TD\nModèles avancés d’ANOVA Cours + TD"
+    "text": "Statistique descriptive Diaporama du Cours\nIntroduction au language R Cours + TD"
   },
   {
     "objectID": "cours_ONIRIS.html#ec552-intro-à-r",
@@ -417,7 +417,7 @@
     "href": "cours_ONIRIS.html#cours-ingénieur-troisième-année",
     "title": "cours ONIRIS",
     "section": "Cours Ingénieur troisième année",
-    "text": "Cours Ingénieur troisième année\nTri libre\nModèles avancés d’ANOVA"
+    "text": "Cours Ingénieur troisième année\n\nTri libre Cours + TD\nModèles avancés d’ANOVA Cours + TD"
   },
   {
     "objectID": "CV.html",
@@ -432,5 +432,19 @@
     "title": "Workshops",
     "section": "",
     "text": "Workshops\n\nMars 2025 [ Laboratoire Lorrain de Psychologie et Neurosciences de la dynamique des comportements ] : Statistiques non paramétriques et introduction aux statistiques bayésiennes. https://galharret.github.io/formation_nancy/\nSeptembre 2024 [Agrostat 2024 ] : Structural Equation Modeling. https://galharret.github.io/SEM_AGROSTAT2024/\nFévrier 2024 [Chimiométrie 2024] : Equations structurelles et leurs applications. https://galharret.github.io/SEM/"
+  },
+  {
+    "objectID": "cours_ONIRIS.html#cours-ingénieur-1ière-année",
+    "href": "cours_ONIRIS.html#cours-ingénieur-1ière-année",
+    "title": "cours ONIRIS",
+    "section": "",
+    "text": "Statistique descriptive Diaporama du Cours\nIntroduction au language R Cours + TD"
+  },
+  {
+    "objectID": "cours_ONIRIS.html#cours-ingénieur-deuxième-année",
+    "href": "cours_ONIRIS.html#cours-ingénieur-deuxième-année",
+    "title": "cours ONIRIS",
+    "section": "Cours Ingénieur deuxième année",
+    "text": "Cours Ingénieur deuxième année\n\nAnalyse en Composantes Principales Cours\nMaitrise Statistique des Procédés Cours + TD"
   }
 ]
