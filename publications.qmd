@@ -4,19 +4,15 @@ title: "Publications"
 
 # 2026
 
-- Manuel Hefti, Jean-Michel Galharret, Oscar Navarro, Ghozlane Fleury-Bahi,
-Perceived naturalness and restorative responses in virtual urban environments: Evidence from two immersive VR experiments, Acta Psychologica, Volume 269, 2026, [10.1016/j.actpsy.2026.107401](https://doi.org/10.1016/j.actpsy.2026.107401).
+-   Manuel Hefti, Jean-Michel Galharret, Oscar Navarro, Ghozlane Fleury-Bahi, Perceived naturalness and restorative responses in virtual urban environments: Evidence from two immersive VR experiments, Acta Psychologica, Volume 269, 2026, [10.1016/j.actpsy.2026.107401](https://doi.org/10.1016/j.actpsy.2026.107401).
 
-- Deledalle, A., Bour, V., Galharret, JM. et al. Academic medicine career intentions among medical residents: a social cognitive career theory approach. BMC Med Educ (2026). [10.1186/s12909-026-09740-4](https://doi.org/10.1186/s12909-026-09740-4).
+-   Deledalle, A., Bour, V., Galharret, JM. et al. Academic medicine career intentions among medical residents: a social cognitive career theory approach. BMC Med Educ (2026). [10.1186/s12909-026-09740-4](https://doi.org/10.1186/s12909-026-09740-4).
 
-- Aurélien Madouasse, Matthieu Trotreau, Grégoire Kuntz, Jean-Michel Galharret,
-A Bayesian Hidden Markov Model using continuous longitudinal test data: Evaluation and application to BVD detection in cattle,
-Preventive Veterinary Medicine, Volume 254, 2026, [10.1016/j.prevetmed.2026.106924](https://doi.org/10.1016/j.prevetmed.2026.106924).
+-   Congard, A., Sapin, A., Bret, A., Fleury, G., Boudoukha, A., Navarro, O., Meillerais, S., Khocha, A. & Galharret, J. (2026). Individual differences in polynomial trajectories of affect and emotion regulation over time: Ending lockdown is not easy. *Health Psychology Report*. [10.5114/hpr/221135](https://doi.org/10.5114/hpr/221135).
 
-- Kindelberger, C., Mallet, P., and Galharret, J.-M., 2026. Development of Dating Motivations During High School: Contributions of Romantic Experiences. Journal of Adolescence0: e70132. [10.1002/jad.70132](https://doi.org/10.1002/jad.70132).
+-   Aurélien Madouasse, Matthieu Trotreau, Grégoire Kuntz, Jean-Michel Galharret, A Bayesian Hidden Markov Model using continuous longitudinal test data: Evaluation and application to BVD detection in cattle, Preventive Veterinary Medicine, Volume 254, 2026, [10.1016/j.prevetmed.2026.106924](https://doi.org/10.1016/j.prevetmed.2026.106924).
 
-
-
+-   Kindelberger, C., Mallet, P., and Galharret, J.-M., 2026. Development of Dating Motivations During High School: Contributions of Romantic Experiences. Journal of Adolescence0: e70132. [10.1002/jad.70132](https://doi.org/10.1002/jad.70132).
 
 # 2025
 
